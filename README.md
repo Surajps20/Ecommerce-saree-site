@@ -9,7 +9,7 @@
 
 ## 🌟 Live Demo
 
-[View Live Demo](https://yourusername.github.io/tm-sarees/) • [Report Bug](https://github.com/yourusername/tm-sarees/issues) • [Request Feature](https://github.com/yourusername/tm-sarees/issues)
+[View Live Demo](https://surajps20.github.io/Ecommerce-saree-site/) • [Report Bug](https://github.com/Surajps20/Ecommerce-saree-site/issues) • [Request Feature](https://github.com/Surajps20/Ecommerce-saree-site/issues)
 
 ## 📸 Screenshots
 
@@ -140,10 +140,9 @@ clearAllData()
 
 ## 📚 Documentation
 
-- [GitHub Setup Guide](GITHUB-SETUP.md) - How to upload to GitHub
-- [Deployment Guide](DEPLOYMENT.md) - Deploy to various platforms
+- [Quick Start Guide](START-HERE.md) - How to get started
+- [Upload Guide](UPLOAD-NOW.txt) - Simple upload instructions
 - [Contributing Guidelines](CONTRIBUTING.md) - How to contribute
-- [Quick Commands](QUICK-GITHUB-COMMANDS.txt) - Git commands reference
 
 ## 🤝 Contributing
 
@@ -161,10 +160,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👤 Author
 
-**Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your Profile](https://linkedin.com/in/yourprofile)
-- Email: your.email@example.com
+**Suraj P S**
+- GitHub: [@Surajps20](https://github.com/Surajps20)
+- LinkedIn: [Suraj P S](https://linkedin.com/in/suraj-p-s-817410226)
+- Email: ssuraj6255@gmail.com
 
 ## 🙏 Acknowledgments
 

@@ -20,8 +20,7 @@
 
 ```
 saree/
-├── index.html              # Login/Landing page
-├── index1.html             # Home page
+├── index.html              # Home page
 ├── assets/
 │   └── images/             # All images (products, banners, offers, etc.)
 ├── css/                    # All stylesheets
@@ -33,20 +32,17 @@ saree/
     ├── collection.html
     ├── contact.html
     ├── offer.html
-    ├── profile.html
-    ├── request-otp.html
     └── wishlist.html
 ```
 
 ## Features
-- User authentication (Login/OTP)
 - Product collections
-- Shopping cart
-- Wishlist
-- Checkout system
+- Shopping cart with quantity management
+- Wishlist functionality
+- Complete checkout system
 - Blog section
 - Contact page
-- Special offers
+- Special offers and discount codes
 
 ## Technologies Used
 - HTML5
@@ -97,7 +93,7 @@ saree/
 ## Path Structure
 All file paths have been updated to match the new folder structure:
 
-### From Root Files (index.html, index1.html):
+### From Root Files (index.html):
 - CSS: `css/filename.css`
 - JS: `js/filename.js`
 - Images: `assets/images/filename.jpg`

@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offer-TM Sarees</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS for animation (optional) -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/../css/offer.css">
+</head>
+
+<body>
+    <!-- Header / Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">Saree Collections</a>
+            <!-- Toggler Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="../index1.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="collection.html">Collections</a></li>
+                    <li class="nav-item"><a class="nav-link" href="offer.html">Offers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="wishlist.html">Wishlist</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                    <li class="nav-item"><a class="nav-link" href="checkout.html">Check Out</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Filter Button -->
+    <button class="filter-btn" onclick="toggleFilter()">☰ Filter</button>
+
+    <!-- Overlay -->
+    <div class="overlay" onclick="toggleFilter()"></div>
+
+    <!-- Sidebar Filter -->
+    <div class="filter-sidebar" id="filterSidebar">
+        <h4>Filter By</h4>
+
+        <h5>By Color</h5>
+        <label><input type="checkbox"> Red</label><br>
+        <label><input type="checkbox"> Green</label><br>
+        <label><input type="checkbox"> Pink</label><br>
+        <label><input type="checkbox"> black</label><br>
+        <label><input type="checkbox"> silver</label><br>
+        <label><input type="checkbox"> orange</label><br>
+        <label><input type="checkbox"> yellow</label><br>
+
+
+        <h5>By Price</h5>
+        <label><input type="checkbox"> ₹500 - 10,000</label><br>
+        <label><input type="checkbox"> ₹10,000 - 50,000</label><br>
+        <label><input type="checkbox"> ₹50,000 - ₹2,00,000</label><br>
+        <label><input type="checkbox"> ₹2,00,000 - Above</label><br>
+
+
+        <h5>By Size</h5>
+        <label><input type="checkbox"> S</label><br>
+        <label><input type="checkbox"> M</label><br>
+        <label><input type="checkbox"> L</label><br>
+        <label><input type="checkbox"> XL</label><br>
+        <label><input type="checkbox"> XXL</label><br>
+    </div>
+
+    <section class="section-collection" id="collection" aria-label="collection" data-section>
+        <div class="grid">
+
+            <!-- Full Width Big Banner -->
+            <!-- Slideshow Section -->
+            <div class="banner-full" data-aos="fade-up" data-aos-duration="1200">
+                <div class="slideshow">
+                    <img src="../assets/images/saree offer9.jpg" alt="Big Festive Sale">
+                    <img src="../assets/images/saree offer10.jpg" alt="New Collection">
+                    <img src="../assets/images/saree offer11.jpg" alt="Mega Discount">
+                    <img src="../assets/images/saree offer12.jpg" alt="Exclusive Designs">
+                </div>
+            </div>
+
+
+
+            <!-- Side by Side Banners -->
+            <div class="banner-half" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="100">
+                <img src="../assets/images/saree14.jpg" alt="Banarasi Special">
+                <div class="side-buttons">
+                    <button class="btn" onclick="window.location.href='cart.html'"><i
+                            class="fas fa-shopping-bag"></i></button>
+                    <button class="btn" onclick="window.location.href='wishlist.html'"><i
+                            class="fas fa-star"></i></button>
+                    <button class="btn"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="banner-text">
+                    <h2>Banarasi Special</h2>
+                    <p>Up to 40% OFF</p>
+                    <a href="collection.html" class="banner-btn">Explore</a>
+                </div>
+            </div>
+
+            <div class="banner-half" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+                <img src="../assets/images/saree11.jpg" alt="Kanchipuram Elegance">
+                <div class="side-buttons">
+                    <button class="btn" onclick="window.location.href='cart.html'"><i
+                            class="fas fa-shopping-bag"></i></button>
+                    <button class="btn" onclick="window.location.href='wishlist.html'"><i
+                            class="fas fa-star"></i></button>
+                    <button class="btn"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="banner-text">
+                    <h2>Kanchipuram Elegance</h2>
+                    <p>Exclusive Collection</p>
+                    <a href="collection.html" class="banner-btn">Buy Now</a>
+                </div>
+            </div>
+
+            <div class="banner-half" data-aos="zoom-in-up" data-aos-duration="1200" data-aos-delay="300">
+                <img src="../assets/images/saree12.jpg" alt="Banarasi Special">
+                <div class="side-buttons">
+                    <button class="btn" onclick="window.location.href='cart.html'"><i
+                            class="fas fa-shopping-bag"></i></button>
+                    <button class="btn" onclick="window.location.href='wishlist.html'"><i
+                            class="fas fa-star"></i></button>
+                    <button class="btn"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="banner-text">
+                    <h2>Banarasi Special</h2>
+                    <p>Up to 40% OFF</p>
+                    <a href="collection.html" class="banner-btn">Explore</a>
+                </div>
+            </div>
+
+            <div class="banner-half" data-aos="flip-left" data-aos-duration="1200" data-aos-delay="400">
+                <img src="../assets/images/saree13.jpg" alt="Banarasi Special">
+                <div class="side-buttons">
+                    <button class="btn" onclick="window.location.href='cart.html'"><i
+                            class="fas fa-shopping-bag"></i></button>
+                    <button class="btn" onclick="window.location.href='wishlist.html'"><i
+                            class="fas fa-star"></i></button>
+                    <button class="btn"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="banner-text">
+                    <h2>Banarasi Special</h2>
+                    <p>Up to 40% OFF</p>
+                    <a href="collection.html" class="banner-btn">Explore</a>
+                </div>
+            </div>
+
+            <div class="banner-full" data-aos="fade-up" data-aos-duration="1200">
+                <div class="slideshow">
+                    <img src="../assets/images/saree offer1.jpg" alt="Big Festive Sale">
+                    <img src="../assets/images/saree offer2.jpg" alt="New Collection">
+                    <img src="../assets/images/saree offer3.jpg" alt="Mega Discount">
+                    <img src="../assets/images/saree offer4.jpg" alt="Exclusive Designs">
+                </div>
+            </div>
+
+            <!-- Banner 1 -->
+            <div class="banner-half" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="100">
+                <img src="../assets/images/saree15.jpg" alt="Patola Special">
+                <div class="side-buttons">
+                    <button class="btn" onclick="window.location.href='cart.html'"><i
+                            class="fas fa-shopping-bag"></i></button>
+                    <button class="btn" onclick="window.location.href='wishlist.html'"><i
+                            class="fas fa-star"></i></button>
+                    <button class="btn"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="banner-text">
+                    <h2>Patola Special</h2>
+                    <p>Up to 20% OFF</p>
+                    <a href="collection.html" class="banner-btn">Explore</a>
+                </div>
+            </div>
+
+            <!-- Banner 2 -->
+            <div class="banner-half" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+                <img src="../assets/images/saree16.jpg" alt="Chanderi Elegance">
+                <div class="side-buttons">
+                    <button class="btn" onclick="window.location.href='cart.html'"><i
+                            class="fas fa-shopping-bag"></i></button>
+                    <button class="btn" onclick="window.location.href='wishlist.html'"><i
+                            class="fas fa-star"></i></button>
+                    <button class="btn"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="banner-text">
+                    <h2>Chanderi Elegance</h2>
+                    <p>Exclusive Collection</p>
+                    <a href="collection.html" class="banner-btn">Buy Now</a>
+                </div>
+            </div>
+
+            <!-- Banner 3 -->
+            <div class="banner-half" data-aos="zoom-in-up" data-aos-duration="1200" data-aos-delay="300">
+                <img src="../assets/images/saree17.jpg" alt="Tussar Silk Saree">
+                <div class="side-buttons">
+                    <button class="btn" onclick="window.location.href='cart.html'"><i
+                            class="fas fa-shopping-bag"></i></button>
+                    <button class="btn" onclick="window.location.href='wishlist.html'"><i
+                            class="fas fa-star"></i></button>
+                    <button class="btn"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="banner-text">
+                    <h2>Tussar Silk Saree</h2>
+                    <p>Up to 30% OFF</p>
+                    <a href="collection.html" class="banner-btn">Explore</a>
+                </div>
+            </div>
+
+            <!-- Banner 4 -->
+            <div class="banner-half" data-aos="flip-left" data-aos-duration="1200" data-aos-delay="400">
+                <img src="../assets/images/saree18.jpg" alt="Bandhani Saree">
+                <div class="side-buttons">
+                    <button class="btn" onclick="window.location.href='cart.html'"><i
+                            class="fas fa-shopping-bag"></i></button>
+                    <button class="btn" onclick="window.location.href='wishlist.html'"><i
+                            class="fas fa-star"></i></button>
+                    <button class="btn"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="banner-text">
+                    <h2>Bandhani Saree</h2>
+                    <p>Up to 70% OFF</p>
+                    <a href="collection.html" class="banner-btn">Explore</a>
+                </div>
+            </div>
+
+
+
+
+            <div class="banner-full" data-aos="fade-up" data-aos-duration="1200">
+                <div class="slideshow">
+                    <img src="../assets/images/saree offer5.jpg" alt="Big Festive Sale">
+                    <img src="../assets/images/saree offer6.jpg" alt="New Collection">
+                    <img src="../assets/images/saree offer8.jpg" alt="Mega Discount">
+                    <img src="../assets/images/saree offer13.jpg" alt="Exclusive Designs">
+                </div>
+            </div>
+
+            <!-- Banner 1 -->
+            <div class="banner-half" data-aos="fade-right" data-aos-duration="1200">
+                <img src="../assets/images/saree19.jpg" alt="Banarasi Special">
+                <div class="side-buttons">
+                    <button class="btn" onclick="window.location.href='cart.html'"><i
+                            class="fas fa-shopping-bag"></i></button>
+                    <button class="btn" onclick="window.location.href='wishlist.html'"><i
+                            class="fas fa-star"></i></button>
+                    <button class="btn"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="banner-text">
+                    <h2>Pochampally Saree</h2>
+                    <p>Up to 40% OFF</p>
+                    <a href="collection.html" class="banner-btn">Explore</a>
+                </div>
+            </div>
+
+            <!-- Banner 2 -->
+            <div class="banner-half" data-aos="zoom-in-up" data-aos-duration="1300">
+                <img src="../assets/images/saree20.jpg" alt="Kanchipuram Elegance">
+                <div class="side-buttons">
+                    <button class="btn" onclick="window.location.href='cart.html'"><i
+                            class="fas fa-shopping-bag"></i></button>
+                    <button class="btn" onclick="window.location.href='wishlist.html'"><i
+                            class="fas fa-star"></i></button>
+                    <button class="btn"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="banner-text">
+                    <h2>Paithani Saree</h2>
+                    <p>Exclusive Collection</p>
+                    <a href="collection.html" class="banner-btn">Buy Now</a>
+                </div>
+            </div>
+
+            <!-- Banner 3 -->
+            <div class="banner-half" data-aos="flip-left" data-aos-duration="1400">
+                <img src="../assets/images/saree21.jpg" alt="Banarasi Special">
+                <div class="side-buttons">
+                    <button class="btn" onclick="window.location.href='cart.html'"><i
+                            class="fas fa-shopping-bag"></i></button>
+                    <button class="btn" onclick="window.location.href='wishlist.html'"><i
+                            class="fas fa-star"></i></button>
+                    <button class="btn"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="banner-text">
+                    <h2>Jamdani Saree</h2>
+                    <p>Up to 20% OFF</p>
+                    <a href="collection.html" class="banner-btn">Explore</a>
+                </div>
+            </div>
+
+            <!-- Banner 4 -->
+            <div class="banner-half" data-aos="fade-up-left" data-aos-duration="1500">
+                <img src="../assets/images/saree22.jpg" alt="Banarasi Special">
+                <div class="side-buttons">
+                    <button class="btn" onclick="window.location.href='cart.html'"><i
+                            class="fas fa-shopping-bag"></i></button>
+                    <button class="btn" onclick="window.location.href='wishlist.html'"><i
+                            class="fas fa-star"></i></button>
+                    <button class="btn"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="banner-text">
+                    <h2>Kota Doria Saree</h2>
+                    <p>Up to 40% OFF</p>
+                    <a href="collection.html" class="banner-btn">Explore</a>
+                </div>
+            </div>
+
+
+            <div class="banner-full" data-aos="fade-up" data-aos-duration="1200">
+                <div class="slideshow">
+                    <img src="../assets/images/saree offer14.jpg" alt="Big Festive Sale">
+                    <img src="../assets/images/saree offer15.jpg" alt="New Collection">
+                    <img src="../assets/images/saree offer16.jpg" alt="Mega Discount">
+                    <img src="../assets/images/saree offer17.jpg" alt="Exclusive Designs">
+                </div>
+            </div>
+            <!-- Banner 5 -->
+            <div class="banner-half" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
+                <img src="../assets/images/saree23.jpg" alt="Banarasi Special">
+                <div class="side-buttons">
+                    <button class="btn" onclick="window.location.href='cart.html'"><i
+                            class="fas fa-shopping-bag"></i></button>
+                    <button class="btn" onclick="window.location.href='wishlist.html'"><i
+                            class="fas fa-star"></i></button>
+                    <button class="btn"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="banner-text">
+                    <h2>Banarasi Special</h2>
+                    <p>Up to 40% OFF</p>
+                    <a href="collection.html" class="banner-btn">Explore</a>
+                </div>
+            </div>
+
+            <!-- Banner 6 -->
+            <div class="banner-half" data-aos="flip-right" data-aos-duration="1300" data-aos-delay="200">
+                <img src="../assets/images/saree24.jpg" alt="Kanchipuram Elegance">
+                <div class="side-buttons">
+                    <button class="btn" onclick="window.location.href='cart.html'"><i
+                            class="fas fa-shopping-bag"></i></button>
+                    <button class="btn" onclick="window.location.href='wishlist.html'"><i
+                            class="fas fa-star"></i></button>
+                    <button class="btn"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="banner-text">
+                    <h2>Chikankari Saree</h2>
+                    <p>Exclusive Collection</p>
+                    <a href="collection.html" class="banner-btn">Buy Now</a>
+                </div>
+            </div>
+
+            <!-- Banner 7 -->
+            <div class="banner-half" data-aos="zoom-in" data-aos-duration="1400" data-aos-delay="300">
+                <img src="../assets/images/saree25.jpg" alt="Banarasi Special">
+                <div class="side-buttons">
+                    <button class="btn" onclick="window.location.href='cart.html'"><i
+                            class="fas fa-shopping-bag"></i></button>
+                    <button class="btn" onclick="window.location.href='wishlist.html'"><i
+                            class="fas fa-star"></i></button>
+                    <button class="btn"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="banner-text">
+                    <h2>Chikankari Saree</h2>
+                    <p>Up to 40% OFF</p>
+                    <a href="collection.html" class="banner-btn">Explore</a>
+                </div>
+            </div>
+
+            <!-- Banner 8 -->
+            <div class="banner-half" data-aos="fade-down-left" data-aos-duration="1500" data-aos-delay="400">
+                <img src="../assets/images/saree26.jpg" alt="Banarasi Special">
+                <div class="side-buttons">
+                    <button class="btn" onclick="window.location.href='cart.html'"><i
+                            class="fas fa-shopping-bag"></i></button>
+                    <button class="btn" onclick="window.location.href='wishlist.html'"><i
+                            class="fas fa-star"></i></button>
+                    <button class="btn"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="banner-text">
+                    <h2>Sambalpuri Saree</h2>
+                    <p>Up to 40% OFF</p>
+                    <a href="collection.html" class="banner-btn">Explore</a>
+                </div>
+            </div>
+
+
+            <div class="banner-full" data-aos="fade-up" data-aos-duration="1200">
+                <div class="slideshow">
+                    <img src="../assets/images/saree offer18.jpg" alt="Big Festive Sale">
+                    <img src="../assets/images/saree offer20.jpg" alt="New Collection">
+                    <img src="../assets/images/saree offer21.jpg" alt="Mega Discount">
+                    <img src="../assets/images/saree offer9.jpg" alt="Exclusive Designs">
+                </div>
+            </div>
+
+            <!-- Assam Silk Saree -->
+            <div class="banner-half" data-aos="fade-down-right" data-aos-duration="1200" data-aos-delay="100">
+                <img src="../assets/images/saree27.jpg" alt="Banarasi Special">
+                <div class="side-buttons">
+                    <button class="btn" onclick="window.location.href='cart.html'"><i
+                            class="fas fa-shopping-bag"></i></button>
+                    <button class="btn" onclick="window.location.href='wishlist.html'"><i
+                            class="fas fa-star"></i></button>
+                    <button class="btn"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="banner-text">
+                    <h2>Assam Silk Saree</h2>
+                    <p>Up to 40% OFF</p>
+                    <a href="collection.html" class="banner-btn">Explore</a>
+                </div>
+            </div>
+
+            <!-- Baluchari Saree -->
+            <div class="banner-half" data-aos="zoom-in" data-aos-duration="1300" data-aos-delay="200">
+                <img src="../assets/images/saree28.jpg" alt="Kanchipuram Elegance">
+                <div class="side-buttons">
+                    <button class="btn" onclick="window.location.href='cart.html'"><i
+                            class="fas fa-shopping-bag"></i></button>
+                    <button class="btn" onclick="window.location.href='wishlist.html'"><i
+                            class="fas fa-star"></i></button>
+                    <button class="btn"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="banner-text">
+                    <h2>Baluchari Saree</h2>
+                    <p>Exclusive Collection</p>
+                    <a href="collection.html" class="banner-btn">Buy Now</a>
+                </div>
+            </div>
+
+            <!-- Muga Silk Saree -->
+            <div class="banner-half" data-aos="flip-up" data-aos-duration="1400" data-aos-delay="300">
+                <img src="../assets/images/saree29.jpg" alt="Banarasi Special">
+                <div class="side-buttons">
+                    <button class="btn" onclick="window.location.href='cart.html'"><i
+                            class="fas fa-shopping-bag"></i></button>
+                    <button class="btn" onclick="window.location.href='wishlist.html'"><i
+                            class="fas fa-star"></i></button>
+                    <button class="btn"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="banner-text">
+                    <h2>Muga Silk Saree</h2>
+                    <p>Up to 40% OFF</p>
+                    <a href="collection.html" class="banner-btn">Explore</a>
+                </div>
+            </div>
+
+            <!-- Narayanpet Saree -->
+            <div class="banner-half" data-aos="fade-up-left" data-aos-duration="1500" data-aos-delay="400">
+                <img src="../assets/images/saree30.jpg" alt="Banarasi Special">
+                <div class="side-buttons">
+                    <button class="btn" onclick="window.location.href='cart.html'"><i
+                            class="fas fa-shopping-bag"></i></button>
+                    <button class="btn" onclick="window.location.href='wishlist.html'"><i
+                            class="fas fa-star"></i></button>
+                    <button class="btn"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="banner-text">
+                    <h2>Narayanpet Saree</h2>
+                    <p>Up to 40% OFF</p>
+                    <a href="collection.html" class="banner-btn">Explore</a>
+                </div>
+            </div>
+
+
+            <div class="banner-full" data-aos="fade-up" data-aos-duration="1200">
+                <div class="slideshow">
+                    <img src="../assets/images/saree offer1.jpg" alt="Big Festive Sale">
+                    <img src="../assets/images/saree offer2.jpg" alt="New Collection">
+                    <img src="../assets/images/saree offer3.jpg" alt="Mega Discount">
+                    <img src="../assets/images/saree offer4.jpg" alt="Exclusive Designs">
+                </div>
+            </div>
+
+            <!-- Gadwal Saree -->
+            <div class="banner-half" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="100">
+                <img src="../assets/images/saree31.jpg" alt="Banarasi Special">
+                <div class="side-buttons">
+                    <button class="btn" onclick="window.location.href='cart.html'"><i
+                            class="fas fa-shopping-bag"></i></button>
+                    <button class="btn" onclick="window.location.href='wishlist.html'"><i
+                            class="fas fa-star"></i></button>
+                    <button class="btn"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="banner-text">
+                    <h2>Gadwal Saree</h2>
+                    <p>Up to 40% OFF</p>
+                    <a href="collection.html" class="banner-btn">Explore</a>
+                </div>
+            </div>
+
+            <!-- Konrad Saree -->
+            <div class="banner-half" data-aos="zoom-in-up" data-aos-duration="1300" data-aos-delay="200">
+                <img src="../assets/images/saree32.jpg" alt="Kanchipuram Elegance">
+                <div class="side-buttons">
+                    <button class="btn" onclick="window.location.href='cart.html'"><i
+                            class="fas fa-shopping-bag"></i></button>
+                    <button class="btn" onclick="window.location.href='wishlist.html'"><i
+                            class="fas fa-star"></i></button>
+                    <button class="btn"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="banner-text">
+                    <h2>Konrad Saree</h2>
+                    <p>Exclusive Collection</p>
+                    <a href="collection.html" class="banner-btn">Buy Now</a>
+                </div>
+            </div>
+
+            <!-- Kantha Saree -->
+            <div class="banner-half" data-aos="flip-left" data-aos-duration="1400" data-aos-delay="300">
+                <img src="../assets/images/saree33.jpg" alt="Banarasi Special">
+                <div class="side-buttons">
+                    <button class="btn" onclick="window.location.href='cart.html'"><i
+                            class="fas fa-shopping-bag"></i></button>
+                    <button class="btn" onclick="window.location.href='wishlist.html'"><i
+                            class="fas fa-star"></i></button>
+                    <button class="btn"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="banner-text">
+                    <h2>Kantha Saree</h2>
+                    <p>Up to 40% OFF</p>
+                    <a href="collection.html" class="banner-btn">Explore</a>
+                </div>
+            </div>
+
+            <!-- Bomkai Saree -->
+            <div class="banner-half" data-aos="fade-up-left" data-aos-duration="1500" data-aos-delay="400">
+                <img src="../assets/images/saree34.jpg" alt="Banarasi Special">
+                <div class="side-buttons">
+                    <button class="btn" onclick="window.location.href='cart.html'"><i
+                            class="fas fa-shopping-bag"></i></button>
+                    <button class="btn" onclick="window.location.href='wishlist.html'"><i
+                            class="fas fa-star"></i></button>
+                    <button class="btn"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="banner-text">
+                    <h2>Bomkai Saree</h2>
+                    <p>Up to 40% OFF</p>
+                    <a href="collection.html" class="banner-btn">Explore</a>
+                </div>
+            </div>
+
+
+            <div class="banner-full" data-aos="fade-up" data-aos-duration="1200">
+                <div class="slideshow">
+                    <img src="../assets/images/saree offer5.jpg" alt="Big Festive Sale">
+                    <img src="../assets/images/saree offer6.jpg" alt="New Collection">
+                    <img src="../assets/images/saree offer8.jpg" alt="Mega Discount">
+                    <img src="../assets/images/saree offer10.jpg" alt="Exclusive Designs">
+                </div>
+            </div>
+
+            <!-- Ilkal Saree -->
+            <div class="banner-half" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="100">
+                <img src="../assets/images/saree49.jpg" alt="Banarasi Special">
+                <div class="side-buttons">
+                    <button class="btn" onclick="window.location.href='cart.html'"><i
+                            class="fas fa-shopping-bag"></i></button>
+                    <button class="btn" onclick="window.location.href='wishlist.html'"><i
+                            class="fas fa-star"></i></button>
+                    <button class="btn"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="banner-text">
+                    <h2>Ilkal Saree</h2>
+                    <p>Up to 40% OFF</p>
+                    <a href="collection.html" class="banner-btn">Explore</a>
+                </div>
+            </div>
+
+            <!-- Ghicha Saree -->
+            <div class="banner-half" data-aos="zoom-in-up" data-aos-duration="1300" data-aos-delay="200">
+                <img src="../assets/images/saree40.jpg" alt="Kanchipuram Elegance">
+                <div class="side-buttons">
+                    <button class="btn" onclick="window.location.href='cart.html'"><i
+                            class="fas fa-shopping-bag"></i></button>
+                    <button class="btn" onclick="window.location.href='wishlist.html'"><i
+                            class="fas fa-star"></i></button>
+                    <button class="btn"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="banner-text">
+                    <h2>Ghicha Saree</h2>
+                    <p>Exclusive Collection</p>
+                    <a href="collection.html" class="banner-btn">Buy Now</a>
+                </div>
+            </div>
+
+            <!-- Kosa Silk Saree -->
+            <div class="banner-half" data-aos="flip-left" data-aos-duration="1400" data-aos-delay="300">
+                <img src="../assets/images/saree50.jpg" alt="Banarasi Special">
+                <div class="side-buttons">
+                    <button class="btn" onclick="window.location.href='cart.html'"><i
+                            class="fas fa-shopping-bag"></i></button>
+                    <button class="btn" onclick="window.location.href='wishlist.html'"><i
+                            class="fas fa-star"></i></button>
+                    <button class="btn"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="banner-text">
+                    <h2>Kosa Silk Saree</h2>
+                    <p>Up to 40% OFF</p>
+                    <a href="collection.html" class="banner-btn">Explore</a>
+                </div>
+            </div>
+
+            <!-- Tant Saree -->
+            <div class="banner-half" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1500"
+                data-aos-delay="400">
+                <img src="../assets/images/saree51.jpg" alt="Banarasi Special">
+                <div class="side-buttons">
+                    <button class="btn" onclick="window.location.href='cart.html'"><i
+                            class="fas fa-shopping-bag"></i></button>
+                    <button class="btn" onclick="window.location.href='wishlist.html'"><i
+                            class="fas fa-star"></i></button>
+                    <button class="btn"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="banner-text">
+                    <h2>Tant Saree</h2>
+                    <p>Up to 40% OFF</p>
+                    <a href="collection.html" class="banner-btn">Explore</a>
+                </div>
+            </div>
+
+
+            <div class="banner-full" data-aos="fade-up" data-aos-duration="1200">
+                <div class="slideshow">
+                    <img src="../assets/images/saree offer11.jpg" alt="Big Festive Sale">
+                    <img src="../assets/images/saree offer12.jpg" alt="New Collection">
+                    <img src="../assets/images/saree offer13.jpg" alt="Mega Discount">
+                    <img src="../assets/images/saree offer14.jpg" alt="Exclusive Designs">
+                </div>
+            </div>
+
+            <!-- Garad Saree -->
+            <div class="banner-half" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
+                <img src="../assets/images/saree52.jpg" alt="Banarasi Special">
+                <div class="side-buttons">
+                    <button class="btn" onclick="window.location.href='cart.html'"><i
+                            class="fas fa-shopping-bag"></i></button>
+                    <button class="btn" onclick="window.location.href='wishlist.html'"><i
+                            class="fas fa-star"></i></button>
+                    <button class="btn"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="banner-text">
+                    <h2>Garad Saree</h2>
+                    <p>Up to 40% OFF</p>
+                    <a href="collection.html" class="banner-btn">Explore</a>
+                </div>
+            </div>
+
+            <!-- Dhakai Jamdani Saree -->
+            <div class="banner-half" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="200">
+                <img src="../assets/images/saree53.jpg" alt="Kanchipuram Elegance">
+                <div class="side-buttons">
+                    <button class="btn" onclick="window.location.href='cart.html'"><i
+                            class="fas fa-shopping-bag"></i></button>
+                    <button class="btn" onclick="window.location.href='wishlist.html'"><i
+                            class="fas fa-star"></i></button>
+                    <button class="btn"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="banner-text">
+                    <h2>Dhakai Jamdani Saree</h2>
+                    <p>Exclusive Collection</p>
+                    <a href="collection.html" class="banner-btn">Buy Now</a>
+                </div>
+            </div>
+
+            <!-- Patan Patola Saree -->
+            <div class="banner-half" data-aos="flip-left" data-aos-duration="1300" data-aos-delay="300">
+                <img src="../assets/images/saree56.jpg" alt="Banarasi Special">
+                <div class="side-buttons">
+                    <button class="btn" onclick="window.location.href='cart.html'"><i
+                            class="fas fa-shopping-bag"></i></button>
+                    <button class="btn" onclick="window.location.href='wishlist.html'"><i
+                            class="fas fa-star"></i></button>
+                    <button class="btn"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="banner-text">
+                    <h2>Patan Patola Saree</h2>
+                    <p>Up to 40% OFF</p>
+                    <a href="collection.html" class="banner-btn">Explore</a>
+                </div>
+            </div>
+
+            <!-- Leheriya Saree -->
+            <div class="banner-half" data-aos="flip-right" data-aos-duration="1300" data-aos-delay="400">
+                <img src="../assets/images/saree55.jpg" alt="Banarasi Special">
+                <div class="side-buttons">
+                    <button class="btn" onclick="window.location.href='cart.html'"><i
+                            class="fas fa-shopping-bag"></i></button>
+                    <button class="btn" onclick="window.location.href='wishlist.html'"><i
+                            class="fas fa-star"></i></button>
+                    <button class="btn"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="banner-text">
+                    <h2>Leheriya Saree</h2>
+                    <p>Up to 40% OFF</p>
+                    <a href="collection.html" class="banner-btn">Explore</a>
+                </div>
+            </div>
+
+
+            <div class="banner-full" data-aos="fade-up" data-aos-duration="1200">
+                <div class="slideshow">
+                    <img src="../assets/images/saree offer15.jpg" alt="Big Festive Sale">
+                    <img src="../assets/images/saree offer16.jpg" alt="New Collection">
+                    <img src="../assets/images/saree offer17.jpg" alt="Mega Discount">
+                    <img src="../assets/images/saree offer18.jpg" alt="Exclusive Designs">
+                </div>
+            </div>
+            <!-- Kotpad Saree -->
+            <div class="banner-half" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="100">
+                <img src="../assets/images/saree57.jpg" alt="Banarasi Special">
+                <div class="side-buttons">
+                    <button class="btn" onclick="window.location.href='cart.html'"><i
+                            class="fas fa-shopping-bag"></i></button>
+                    <button class="btn" onclick="window.location.href='wishlist.html'"><i
+                            class="fas fa-star"></i></button>
+                    <button class="btn"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="banner-text">
+                    <h2>Kotpad Saree</h2>
+                    <p>Up to 40% OFF</p>
+                    <a href="collection.html" class="banner-btn">Explore</a>
+                </div>
+            </div>
+
+            <!-- Bishnupuri Silk Saree -->
+            <div class="banner-half" data-aos="zoom-in-up" data-aos-duration="1200" data-aos-delay="200">
+                <img src="../assets/images/saree58.jpg" alt="Kanchipuram Elegance">
+                <div class="side-buttons">
+                    <button class="btn" onclick="window.location.href='cart.html'"><i
+                            class="fas fa-shopping-bag"></i></button>
+                    <button class="btn" onclick="window.location.href='wishlist.html'"><i
+                            class="fas fa-star"></i></button>
+                    <button class="btn"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="banner-text">
+                    <h2>Bishnupuri Silk Saree</h2>
+                    <p>Exclusive Collection</p>
+                    <a href="collection.html" class="banner-btn">Buy Now</a>
+                </div>
+            </div>
+
+            <!-- Phulkari Saree -->
+            <div class="banner-half" data-aos="zoom-in-down" data-aos-duration="1200" data-aos-delay="300">
+                <img src="../assets/images/saree59.jpg" alt="Banarasi Special">
+                <div class="side-buttons">
+                    <button class="btn" onclick="window.location.href='cart.html'"><i
+                            class="fas fa-shopping-bag"></i></button>
+                    <button class="btn" onclick="window.location.href='wishlist.html'"><i
+                            class="fas fa-star"></i></button>
+                    <button class="btn"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="banner-text">
+                    <h2>Phulkari Saree</h2>
+                    <p>Up to 40% OFF</p>
+                    <a href="collection.html" class="banner-btn">Explore</a>
+                </div>
+            </div>
+
+            <!-- Kani Saree -->
+            <div class="banner-half" data-aos="slide-right" data-aos-duration="1200" data-aos-delay="400">
+                <img src="../assets/images/saree60.jpg" alt="Banarasi Special">
+                <div class="side-buttons">
+                    <button class="btn" onclick="window.location.href='cart.html'"><i
+                            class="fas fa-shopping-bag"></i></button>
+                    <button class="btn" onclick="window.location.href='wishlist.html'"><i
+                            class="fas fa-star"></i></button>
+                    <button class="btn"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="banner-text">
+                    <h2>Kani Saree</h2>
+                    <p>Up to 40% OFF</p>
+                    <a href="collection.html" class="banner-btn">Explore</a>
+                </div>
+            </div>
+
+
+
+
+            <div class="banner-full" data-aos="fade-up" data-aos-duration="1200">
+                <div class="slideshow">
+                    <img src="../assets/images/saree offer20.jpg" alt="Big Festive Sale">
+                    <img src="../assets/images/saree offer21.jpg" alt="New Collection">
+                    <img src="../assets/images/saree offer1.jpg" alt="Mega Discount">
+                    <img src="../assets/images/saree offer2.jpg" alt="Exclusive Designs">
+                </div>
+            </div>
+
+            <!-- Kasavu Saree -->
+            <div class="banner-half" data-aos="flip-left" data-aos-duration="1200" data-aos-delay="100">
+                <img src="../assets/images/saree61.jpg" alt="Banarasi Special">
+                <div class="side-buttons">
+                    <button class="btn" onclick="window.location.href='cart.html'"><i
+                            class="fas fa-shopping-bag"></i></button>
+                    <button class="btn" onclick="window.location.href='wishlist.html'"><i
+                            class="fas fa-star"></i></button>
+                    <button class="btn"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="banner-text">
+                    <h2>Kasavu Saree</h2>
+                    <p>Up to 40% OFF</p>
+                    <a href="collection.html" class="banner-btn">Explore</a>
+                </div>
+            </div>
+
+            <!-- Kota Silk Saree -->
+            <div class="banner-half" data-aos="flip-right" data-aos-duration="1200" data-aos-delay="200">
+                <img src="../assets/images/saree62.jpg" alt="Kanchipuram Elegance">
+                <div class="side-buttons">
+                    <button class="btn" onclick="window.location.href='cart.html'"><i
+                            class="fas fa-shopping-bag"></i></button>
+                    <button class="btn" onclick="window.location.href='wishlist.html'"><i
+                            class="fas fa-star"></i></button>
+                    <button class="btn"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="banner-text">
+                    <h2>Kota Silk Saree</h2>
+                    <p>Exclusive Collection</p>
+                    <a href="collection.html" class="banner-btn">Buy Now</a>
+                </div>
+            </div>
+
+            <!-- Chanderi Silk Saree -->
+            <div class="banner-half" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="300">
+                <img src="../assets/images/saree63.jpg" alt="Banarasi Special">
+                <div class="side-buttons">
+                    <button class="btn" onclick="window.location.href='cart.html'"><i
+                            class="fas fa-shopping-bag"></i></button>
+                    <button class="btn" onclick="window.location.href='wishlist.html'"><i
+                            class="fas fa-star"></i></button>
+                    <button class="btn"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="banner-text">
+                    <h2>Chanderi Silk Saree</h2>
+                    <p>Up to 40% OFF</p>
+                    <a href="#" class="banner-btn">Explore</a>
+                </div>
+            </div>
+
+            <!-- Mysore Silk Saree -->
+            <div class="banner-half" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="400">
+                <img src="../assets/images/saree64.jpg" alt="Banarasi Special">
+                <div class="side-buttons">
+                    <button class="btn" onclick="window.location.href='cart.html'"><i
+                            class="fas fa-shopping-bag"></i></button>
+                    <button class="btn" onclick="window.location.href='wishlist.html'"><i
+                            class="fas fa-star"></i></button>
+                    <button class="btn"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="banner-text">
+                    <h2>Mysore Silk Saree</h2>
+                    <p>Up to 40% OFF</p>
+                    <a href="collection.html" class="banner-btn">Explore</a>
+                </div>
+            </div>
+
+
+
+            <div class="banner-full" data-aos="fade-up" data-aos-duration="1200">
+                <div class="slideshow">
+                    <img src="../assets/images/saree offer3.jpg" alt="Big Festive Sale">
+                    <img src="../assets/images/saree offer4.jpg" alt="New Collection">
+                    <img src="../assets/images/saree offer5.jpg" alt="Mega Discount">
+                    <img src="../assets/images/saree offer6.jpg" alt="Exclusive Designs">
+                </div>
+            </div>
+
+
+            <!-- Uppada Silk Saree -->
+            <div class="banner-half" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="100">
+                <img src="../assets/images/saree69.jpg" alt="Banarasi Special">
+                <div class="side-buttons">
+                    <button class="btn" onclick="window.location.href='cart.html'"><i
+                            class="fas fa-shopping-bag"></i></button>
+                    <button class="btn" onclick="window.location.href='wishlist.html'"><i
+                            class="fas fa-star"></i></button>
+                    <button class="btn"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="banner-text">
+                    <h2>Uppada Silk Saree</h2>
+                    <p>Up to 40% OFF</p>
+                    <a href="collection.html" class="banner-btn">Explore</a>
+                </div>
+            </div>
+
+            <!-- Mangalagiri Saree -->
+            <div class="banner-half" data-aos="zoom-in-up" data-aos-duration="1200" data-aos-delay="200">
+                <img src="../assets/images/saree66.jpg" alt="Kanchipuram Elegance">
+                <div class="side-buttons">
+                    <button class="btn" onclick="window.location.href='cart.html'"><i
+                            class="fas fa-shopping-bag"></i></button>
+                    <button class="btn" onclick="window.location.href='wishlist.html'"><i
+                            class="fas fa-star"></i></button>
+                    <button class="btn"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="banner-text">
+                    <h2>Mangalagiri Saree</h2>
+                    <p>Exclusive Collection</p>
+                    <a href="collection.html" class="banner-btn">Buy Now</a>
+                </div>
+            </div>
+
+            <!-- Gota Patti Saree -->
+            <div class="banner-half" data-aos="flip-up" data-aos-duration="1200" data-aos-delay="300">
+                <img src="../assets/images/saree67.jpg" alt="Banarasi Special">
+                <div class="side-buttons">
+                    <button class="btn" onclick="window.location.href='cart.html'"><i
+                            class="fas fa-shopping-bag"></i></button>
+                    <button class="btn" onclick="window.location.href='wishlist.html'"><i
+                            class="fas fa-star"></i></button>
+                    <button class="btn"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="banner-text">
+                    <h2>Gota Patti Saree</h2>
+                    <p>Up to 40% OFF</p>
+                    <a href="collection.html" class="banner-btn">Explore</a>
+                </div>
+            </div>
+
+            <!-- Pattachitra Saree -->
+            <div class="banner-half" data-aos="flip-down" data-aos-duration="1200" data-aos-delay="400">
+                <img src="../assets/images/saree68.jpg" alt="Banarasi Special">
+                <div class="side-buttons">
+                    <button class="btn" onclick="window.location.href='cart.html'"><i
+                            class="fas fa-shopping-bag"></i></button>
+                    <button class="btn" onclick="window.location.href='wishlist.html'"><i
+                            class="fas fa-star"></i></button>
+                    <button class="btn"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="banner-text">
+                    <h2>Pattachitra Saree</h2>
+                    <p>Up to 40% OFF</p>
+                    <a href="collection.html" class="banner-btn">Explore</a>
+                </div>
+            </div>
+
+
+
+            <div class="banner-full" data-aos="fade-up" data-aos-duration="1200">
+                <div class="slideshow">
+                    <img src="../assets/images/saree offer8.jpg" alt="Big Festive Sale">
+                    <img src="../assets/images/saree offer9.jpg" alt="New Collection">
+                    <img src="../assets/images/saree offer10.jpg" alt="Mega Discount">
+                    <img src="../assets/images/saree offer11.jpg" alt="Exclusive Designs">
+                </div>
+            </div>
+
+            <!-- Sanganeri Saree -->
+            <div class="banner-half" data-aos="fade-up-right" data-aos-duration="1200" data-aos-delay="100">
+                <img src="../assets/images/saree70.jpg" alt="Banarasi Special">
+                <div class="side-buttons">
+                    <button class="btn" onclick="window.location.href='cart.html'"><i
+                            class="fas fa-shopping-bag"></i></button>
+                    <button class="btn" onclick="window.location.href='wishlist.html'"><i
+                            class="fas fa-star"></i></button>
+                    <button class="btn"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="banner-text">
+                    <h2>Sanganeri Saree</h2>
+                    <p>Up to 40% OFF</p>
+                    <a href="collection.html" class="banner-btn">Explore</a>
+                </div>
+            </div>
+
+            <!-- Kota Jali Saree -->
+            <div class="banner-half" data-aos="fade-up-left" data-aos-duration="1200" data-aos-delay="200">
+                <img src="../assets/images/saree71.jpg" alt="Kanchipuram Elegance">
+                <div class="side-buttons">
+                    <button class="btn" onclick="window.location.href='cart.html'"><i
+                            class="fas fa-shopping-bag"></i></button>
+                    <button class="btn" onclick="window.location.href='wishlist.html'"><i
+                            class="fas fa-star"></i></button>
+                    <button class="btn"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="banner-text">
+                    <h2>Kota Jali Saree</h2>
+                    <p>Exclusive Collection</p>
+                    <a href="collection.html" class="banner-btn">Buy Now</a>
+                </div>
+            </div>
+
+            <!-- Sonepuri Silk Saree -->
+            <div class="banner-half" data-aos="flip-left" data-aos-duration="1200" data-aos-delay="300">
+                <img src="../assets/images/saree72.jpg" alt="Banarasi Special">
+                <div class="side-buttons">
+                    <button class="btn" onclick="window.location.href='cart.html'"><i
+                            class="fas fa-shopping-bag"></i></button>
+                    <button class="btn" onclick="window.location.href='wishlist.html'"><i
+                            class="fas fa-star"></i></button>
+                    <button class="btn"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="banner-text">
+                    <h2>Sonepuri Silk Saree</h2>
+                    <p>Up to 40% OFF</p>
+                    <a href="collection.html" class="banner-btn">Explore</a>
+                </div>
+            </div>
+
+            <!-- Puttapaka Saree -->
+            <div class="banner-half" data-aos="flip-right" data-aos-duration="1200" data-aos-delay="400">
+                <img src="../assets/images/saree73.jpg" alt="Banarasi Special">
+                <div class="side-buttons">
+                    <button class="btn" onclick="window.location.href='cart.html'"><i
+                            class="fas fa-shopping-bag"></i></button>
+                    <button class="btn" onclick="window.location.href='wishlist.html'"><i
+                            class="fas fa-star"></i></button>
+                    <button class="btn"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="banner-text">
+                    <h2>Puttapaka Saree</h2>
+                    <p>Up to 40% OFF</p>
+                    <a href="collection.html" class="banner-btn">Explore</a>
+                </div>
+            </div>
+
+
+
+            <div class="banner-full" data-aos="fade-up" data-aos-duration="1200">
+                <div class="slideshow">
+                    <img src="../assets/images/saree offer12.jpg" alt="Big Festive Sale">
+                    <img src="../assets/images/saree offer13.jpg" alt="New Collection">
+                    <img src="../assets/images/saree offer14.jpg" alt="Mega Discount">
+                    <img src="../assets/images/saree offer15.jpg" alt="Exclusive Designs">
+                </div>
+            </div>
+            <!-- South Indian Sarees -->
+            <div class="banner-half" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="100">
+                <img src="../assets/images/saree74.jpg" alt="Banarasi Special">
+                <div class="side-buttons">
+                    <button class="btn" onclick="window.location.href='cart.html'"><i
+                            class="fas fa-shopping-bag"></i></button>
+                    <button class="btn" onclick="window.location.href='wishlist.html'"><i
+                            class="fas fa-star"></i></button>
+                    <button class="btn"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="banner-text">
+                    <h2>South Indian Sarees</h2>
+                    <p>Up to 40% OFF</p>
+                    <a href="collection.html" class="banner-btn">Explore</a>
+                </div>
+            </div>
+
+            <!-- North Indian Sarees -->
+            <div class="banner-half" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+                <img src="../assets/images/saree75.jpg" alt="Kanchipuram Elegance">
+                <div class="side-buttons">
+                    <button class="btn" onclick="window.location.href='cart.html'"><i
+                            class="fas fa-shopping-bag"></i></button>
+                    <button class="btn" onclick="window.location.href='wishlist.html'"><i
+                            class="fas fa-star"></i></button>
+                    <button class="btn"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="banner-text">
+                    <h2>North Indian Sarees</h2>
+                    <p>Exclusive Collection</p>
+                    <a href="collection.html" class="banner-btn">Buy Now</a>
+                </div>
+            </div>
+
+            <!-- Tant Saree -->
+            <div class="banner-half" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300">
+                <img src="../assets/images/saree76.jpg" alt="Banarasi Special">
+                <div class="banner-text">
+                    <h2>Tant Saree</h2>
+                    <p>Up to 40% OFF</p>
+                    <a href="collection.html" class="banner-btn">Explore</a>
+                </div>
+            </div>
+
+            <!-- Kasavu Saree -->
+            <div class="banner-half" data-aos="flip-left" data-aos-duration="1200" data-aos-delay="400">
+                <img src="../assets/images/saree77.jpg" alt="Banarasi Special">
+                <div class="side-buttons">
+                    <button class="btn" onclick="window.location.href='cart.html'"><i
+                            class="fas fa-shopping-bag"></i></button>
+                    <button class="btn" onclick="window.location.href='wishlist.html'"><i
+                            class="fas fa-star"></i></button>
+                    <button class="btn"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="banner-text">
+                    <h2>Kasavu Saree</h2>
+                    <p>Up to 40% OFF</p>
+                    <a href="collection.html" class="banner-btn">Explore</a>
+                </div>
+            </div>
+    </section>
+
+
+     <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container modern-footer">
+      <div class="footer-right modern-footer-right">
+        <div class="footer-signup">
+          <span class="footer-label signup-label">SIGN UP AND SAVE</span>
+          <p class="footer-desc"><i>Subscribe to get special offers etc</i></p>
+          <form class="footer-email-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit" class="footer-email-btn"><i class="fa fa-envelope"></i></button>
+          </form>
+        </div>
+        <div class="footer-social modern-footer-social">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 TM sarees | All Rights Reserved</p>
+    </div>
+  </footer>
+<script>
+  // Footer email form alert
+  document.addEventListener('DOMContentLoaded', function() {
+    var footerForm = document.querySelector('.footer-email-form');
+    if (footerForm) {
+      footerForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Thank you for subscribing! You will receive our special offers soon.');
+      });
+    }
+    // Contact form alert
+    var contactForm = document.querySelector('.contact-form form');
+    if (contactForm) {
+      contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Thank you for contacting us! We have received your message and will get back to you soon.');
+      });
+    }
+  });
+</script>
+
+
+    <script>
+        // Add background on scroll
+        window.addEventListener("scroll", function () {
+            const navbar = document.querySelector(".custom-navbar");
+            navbar.classList.toggle("scrolled", window.scrollY > 50);
+        });
+    </script>
+
+    <script>
+        function toggleFilter() {
+            document.getElementById("filterSidebar").classList.toggle("active");
+            document.querySelector(".overlay").classList.toggle("active");
+        }
+    </script>
+
+    <!-- AOS Script -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,   // animation speed
+
+        });
+    </script>
+
+     <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html
+

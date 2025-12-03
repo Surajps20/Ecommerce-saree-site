@@ -1,0 +1,567 @@
+body {
+  display: block;
+  justify-content: flex-start;
+  /* Horizontally center */
+  align-items: center;
+  /* Vertically center */
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: papayawhip;
+}
+body,html{
+  overflow-x: hidden;
+}
+
+.left-panel {
+  width: 100%;
+  /* Full screen width */
+  height: 90vh;
+  /* Full screen height */
+  background-image: url(../assets/images/blog-frame-collection.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  border-radius: 1%;
+  color: #fff;
+  margin-top: 80px;
+}
+
+.about-us {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  padding-left: 200px;
+  padding-top: 75px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 0;
+  text-align: center;
+}
+
+.about-paragraph {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-right: 40px;
+  color: #ffffff;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.blog-collage {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 50px;
+  background-color: papayawhip;
+}
+
+.blog-card {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.blog-card:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.blog-card img {
+  width: 100%;
+  height: 570px;
+  object-fit: cover;
+}
+
+.blog-info {
+  padding: 20px;
+}
+
+.blog-info h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.blog-info p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  color: #575757;
+}
+
+
+
+
+.split-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: papayawhip;
+  padding: 60px;
+  gap: 40px;
+}
+
+.fashion-section {
+  flex: 1;
+  text-align: center;
+}
+
+.fashion-section img {
+  width: 100%;
+  height: 500px;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.fashion-section h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  margin-top: 20px;
+  color: #333;
+}
+
+.fashion-section p {
+  font-size: 1rem;
+  color: #000000;
+}
+
+.promo-section {
+  flex: 1;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.promo-section h3 {
+  color: crimson;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.promo-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.promo-section p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.review {
+  display: flex;
+  align-items: flex-start;
+  background-color: #fdfdfd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.review-photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.review-content {
+  flex: 1;
+}
+
+.review-content p {
+  font-size: 1rem;
+  color: #444;
+  font-style: italic;
+  margin-bottom: 8px;
+}
+
+.review-content span {
+  font-size: 0.9rem;
+  color: #777;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.stars {
+  font-size: 1.2rem;
+  color: #e0a800;
+  /* golden yellow */
+}
+
+.custom-navbar {
+  background: rgba(248, 239, 244, 0.5);
+  padding: 15px 0;
+  transition: background 0.4s ease, padding 0.4s ease;
+}
+
+.custom-navbar.scrolled {
+  background: rgba(243, 147, 200, 0.5);
+  padding: 8px 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+
+
+.nav-link {
+  font-family: 'Poppins', sans-serif;
+  color: #0e0d0d !important;
+  font-weight: 500;
+  margin: 0 10px;
+  position: relative;
+  transition: color 0.3s ease;
+  font-size:medium;
+}
+
+/* Gold underline effect */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+ background: #ff00d4;
+  left: 0;
+  bottom: -4px;
+  transition: width 0.4s ease;
+}
+
+.nav-link:hover::after {
+  
+  width: 100%;
+}
+.nav-link:hover {
+  color: #f506d5 !important;
+}
+
+
+
+/* Brand style */
+.navbar-brand {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.3rem;
+  font-weight: bolder;
+color: #f506d5;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+
+/* Footer */
+
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+  flex: 1 1 250px;
+  margin: 10px;
+}
+
+.footer input[type="text"],
+.footer input[type="email"] {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.subscribe-form button {
+  background: #bc558e;
+  border: none;
+  color: white;
+  padding: 10px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.subscribe-form button:hover {
+  background: #bc558e;
+}
+
+/* Social Icons */
+.social-icons a {
+  color: #333;
+  font-size: 20px;
+  margin-right: 12px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #bc558e;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #080808;
+  margin-top: 20px;
+  border-top: 1px solid #eee;
+  padding: 18px 0 18px 0;
+  background: linear-gradient(90deg, #fccb8b 0%, #ffbd97 100%);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  border-radius: 0 0 12px 12px;
+}
+/* Collection Header - Modern, Attractive Style */
+
+/* Modern Footer Styles (screenshot style) */
+.modern-footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  background: #fdfcf8;
+  padding: 40px 0 20px 0;
+  border-top: 1px solid #eee;
+  margin-top: 40px;
+}
+.modern-footer-left {
+  flex: 1 1 200px;
+  text-align: left;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 18px;
+  color: #222;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+.footer-label {
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #222;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+.modern-footer-right {
+  flex: 2 1 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+/* Center the signup form in the footer */
+.footer-signup {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signup-label {
+  font-size: 18px;
+  letter-spacing: 0.18em;
+  color: #222;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-weight: 500;
+  margin-bottom: 8px;
+  display: block;
+}
+.footer-desc {
+  font-size: 16px;
+  color: #222;
+  margin-bottom: 12px;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+.footer-email-form {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #222;
+  padding-bottom: 4px;
+  margin-bottom: 18px;
+  width: 100%;
+  max-width: 350px;
+}
+.footer-email-form input[type="email"] {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 17px;
+  color: #222;
+  flex: 1;
+  padding: 8px 0 8px 0;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+.footer-email-form input[type="email"]::placeholder {
+  color: #888;
+  font-size: 16px;
+}
+.footer-email-btn {
+  background: none;
+  border: none;
+  color: #222;
+  font-size: 22px;
+  cursor: pointer;
+  margin-left: 8px;
+  padding: 0;
+  transition: color 0.2s;
+}
+.footer-email-btn:hover {
+  color: #bc558e;
+}
+.modern-footer-social {
+  display: flex;
+  gap: 18px;
+  margin-top: 10px;
+}
+.modern-footer-social a {
+  color: #222;
+  font-size: 28px;
+  transition: color 0.2s;
+}
+.modern-footer-social a:hover {
+  color: #bc558e;
+}
+@media (max-width: 900px) {
+  .modern-footer {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 24px;
+    padding: 30px 0 10px 0;
+  }
+  .modern-footer-left, .modern-footer-right {
+    padding-left: 0;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-signup {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* ✅ Responsive Adjustments */
+
+/* Tablets and below */
+@media (max-width: 992px) {
+  .about-us {
+    font-size: 2.2rem;
+    padding: 0;
+  }
+
+  .about-paragraph {
+    font-size: 1.2rem;
+    padding: 0 20px;
+  }
+
+  .blog-card img {
+    height: 400px;
+  }
+
+  .split-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .fashion-section img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .promo-section {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .review {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .review-photo {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 600px) {
+  .about-us {
+    font-size: 1.8rem;
+  }
+
+  .about-paragraph {
+    font-size: 1rem;
+  }
+
+  .blog-collage {
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .blog-card img {
+    height: 590px;
+  }
+
+  .fashion-section h2 {
+    font-size: 1.4rem;
+  }
+
+  .fashion-section p,
+  .promo-section p,
+  .review-content p {
+    font-size: 0.9rem;
+  }
+
+  .promo-section h3 {
+    font-size: 1rem;
+  }
+
+  .footer-bottom {
+    font-size: 1rem;
+    padding: 12px 0;
+  }
+
+  .footer-email-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .footer-email-form input[type="email"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .footer-email-btn {
+    align-self: flex-end;
+  }
+
+  .modern-footer-social {
+    justify-content: center;
+  }
+}

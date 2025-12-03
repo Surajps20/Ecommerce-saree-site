@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections-TM Sarees</title>
+    <link rel="stylesheet" href="../css/../css/collection.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- header.html -->
+<nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="#">Saree Collections</a>
+
+    <!-- Toggle Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible Menu -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="../index1.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="collection.html">New Arrivals</a></li>
+        <li class="nav-item"><a class="nav-link" href="offer.html">Offers</a></li>
+        <li class="nav-item"><a class="nav-link" href="wishlist.html">Wishlist</a></li>
+        <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+        <li class="nav-item"><a class="nav-link" href="checkout.html">Check Out</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+    <!-- Filter Button -->
+    <button class="filter-btn" onclick="toggleFilter()">☰ Filter</button>
+
+    <!-- Overlay -->
+    <div class="overlay" onclick="toggleFilter()"></div>
+
+    <!-- Sidebar Filter -->
+    <div class="filter-sidebar" id="filterSidebar">
+        <h4>Filter By</h4>
+
+        <h5>By Color</h5>
+        <label><input type="checkbox"> Red</label><br>
+        <label><input type="checkbox"> Green</label><br>
+        <label><input type="checkbox"> Pink</label><br>
+        <label><input type="checkbox"> black</label><br>
+        <label><input type="checkbox"> silver</label><br>
+        <label><input type="checkbox"> orange</label><br>
+        <label><input type="checkbox"> yellow</label><br>
+
+
+        <h5>By Price</h5>
+        <label><input type="checkbox"> ₹500 - 10,000</label><br>
+        <label><input type="checkbox"> ₹10,000 - 50,000</label><br>
+        <label><input type="checkbox"> ₹50,000 - ₹2,00,000</label><br>
+        <label><input type="checkbox"> ₹2,00,000 - Above</label><br>
+
+
+        
+    </div>
+
+    <!-- Collection Section -->
+<section class="section-collection" id="collection" aria-label="collection" data-section>
+  <div class="grid">
+
+    <!-- Banner with slideshow -->
+   <div class="banner-section" data-aos="fade-down">
+    <h2 data-aos="fade-up" data-aos-delay="400"></h2>
+    <p data-aos="fade-up" data-aos-delay="600"></p>
+</div>
+
+    <!-- Card 1 -->
+    <div class="card" data-aos="fade-up" data-aos-delay="200">
+      <img src="../assets/images/saree.png" alt="Kanchipuram Saree">
+      <div class="side-buttons">
+        <button class="btn" onclick="addToCart(1, 'Kanchipuram Silk Saree – Tamil Nadu', 1000, 'saree.png')"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn" onclick="addToWishlist(1, 'Kanchipuram Silk Saree – Tamil Nadu', 1000, 'saree.png')"><i class="fas fa-star"></i></button>
+        <button class="btn" onclick="addToCart(1, 'Kanchipuram Silk Saree – Tamil Nadu', 1000, 'saree.png'); window.location.href='checkout.html'"><i class="fas fa-shopping-cart"></i></button>
+      </div>
+      <h3>Kanchipuram Silk Saree – Tamil Nadu</h3>
+      <p class="price">₹1000 <button class="btn btn-sm btn-dark" onclick="addToCart(1, 'Kanchipuram Silk Saree – Tamil Nadu', 1000, 'saree.png')">Add to Cart</button></p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card" data-aos="fade-up" data-aos-delay="300">
+      <img src="../assets/images/saree4.jpg" alt="Banarasi Saree">
+      <div class="side-buttons">
+        <button class="btn" onclick="addToCart(2, 'Banarasi Saree – Uttar Pradesh', 2000, 'saree4.jpg')"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn" onclick="addToWishlist(2, 'Banarasi Saree – Uttar Pradesh', 2000, 'saree4.jpg')"><i class="fas fa-star"></i></button>
+        <button class="btn" onclick="addToCart(2, 'Banarasi Saree – Uttar Pradesh', 2000, 'saree4.jpg'); window.location.href='checkout.html'"><i class="fas fa-shopping-cart"></i></button>
+      </div>
+      <h3>Banarasi Saree – Uttar Pradesh</h3>
+      <p class="price">₹2000 <button class="btn btn-sm btn-dark" onclick="addToCart(2, 'Banarasi Saree – Uttar Pradesh', 2000, 'saree4.jpg')">Add to Cart</button></p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card" data-aos="fade-up" data-aos-delay="400">
+      <img src="../assets/images/saree10.jpg" alt="Chanderi Saree">
+      <div class="side-buttons">
+        <button class="btn" onclick="addToCart(3, 'Chanderi Saree – Madhya Pradesh', 2500, 'saree10.jpg')"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn" onclick="addToWishlist(3, 'Chanderi Saree – Madhya Pradesh', 2500, 'saree10.jpg')"><i class="fas fa-star"></i></button>
+        <button class="btn" onclick="addToCart(3, 'Chanderi Saree – Madhya Pradesh', 2500, 'saree10.jpg'); window.location.href='checkout.html'"><i class="fas fa-shopping-cart"></i></button>
+      </div>
+      <h3>Chanderi Saree – Madhya Pradesh</h3>
+      <p class="price">₹2500 <button class="btn btn-sm btn-dark" onclick="addToCart(3, 'Chanderi Saree – Madhya Pradesh', 2500, 'saree10.jpg')">Add to Cart</button></p>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card" data-aos="fade-up" data-aos-delay="500">
+      <img src="../assets/images/saree12.jpg" alt="Paithani Saree">
+      <div class="side-buttons">
+        <button class="btn" onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn" onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+      </div>
+      <h3>Paithani Saree – Maharashtra</h3>
+      <p class="price"><a class="link" style="color: black;" href="checkout.html">₹3000 / Buy Now</a></p>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="card" data-aos="fade-up" data-aos-delay="600">
+      <img src="../assets/images/saree13.jpg" alt="Patola Saree">
+      <div class="side-buttons">
+        <button class="btn" onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn" onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+      </div>
+      <h3>Patola Saree – Gujarat</h3>
+      <p class="price"><a class="link" style="color: black;" href="checkout.html">₹3500 / Buy Now</a></p>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="card" data-aos="fade-up" data-aos-delay="700">
+      <img src="../assets/images/saree14.jpg" alt="Baluchari Saree">
+      <div class="side-buttons">
+        <button class="btn" onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn" onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+      </div>
+      <h3>Baluchari Saree – West Bengal</h3>
+      <p class="price"><a class="link" style="color: black;" href="checkout.html">₹4200 / Buy Now</a></p>
+    </div>
+
+    <!-- Card 7 -->
+    <div class="card" data-aos="fade-up" data-aos-delay="800">
+      <img src="../assets/images/saree15.jpg" alt="Sambalpuri Saree">
+      <div class="side-buttons">
+        <button class="btn" onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn" onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+      </div>
+      <h3>Sambalpuri Saree – Odisha</h3>
+      <p class="price"><a class="link" style="color: black;" href="checkout.html">₹6000 / Buy Now</a></p>
+    </div>
+
+    <!-- Card 8 -->
+    <div class="card" data-aos="fade-up" data-aos-delay="900">
+      <img src="../assets/images/saree16.jpg" alt="Kasavu Saree">
+      <div class="side-buttons">
+        <button class="btn" onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn" onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+      </div>
+      <h3>Kasavu Saree – Kerala</h3>
+      <p class="price"><a class="link" style="color: black;" href="checkout.html">₹5000 / Buy Now</a></p>
+    </div>
+<!-- Banner with slideshow -->
+   <div class="banner-section" data-aos="fade-down">
+    <h2 data-aos="fade-up" data-aos-delay="400"></h2>
+    <p data-aos="fade-up" data-aos-delay="600"></p>
+</div>
+<div class="card" data-aos="fade-up" data-aos-delay="100">
+    <img src="../assets/images/saree50.jpg" alt="Facial">
+    <div class="side-buttons">
+        <button class="btn" onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn" onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+    </div>
+    <h3>Kanchipuram Silk Saree – Tamil Nadu</h3>
+    <p class="price"><a class="link" style="color: black;" href="checkout.html">₹5000/buy now</a></p>
+</div>
+
+<div class="card" data-aos="fade-up" data-aos-delay="200">
+    <img src="../assets/images/saree51.jpg" alt="Facial">
+    <div class="side-buttons">
+        <button class="btn" onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn" onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+    </div>
+    <h3>Chanderi Saree</h3>
+    <p class="price"><a class="link" style="color: black;" href="checkout.html">₹700/buy now</a></p>
+</div>
+
+<div class="card" data-aos="fade-up" data-aos-delay="300">
+    <img src="../assets/images/saree52.jpg" alt="Facial">
+    <div class="side-buttons">
+        <button class="btn" onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn" onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+    </div>
+    <h3>Tussar Silk Saree</h3>
+    <p class="price"><a class="link" style="color: black;" href="checkout.html">₹450/buy now</a></p>
+</div>
+
+<div class="card" data-aos="fade-up" data-aos-delay="400">
+    <img src="../assets/images/saree53.jpg" alt="Facial">
+    <div class="side-buttons">
+        <button class="btn" onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn" onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+    </div>
+    <h3>Patola Saree</h3>
+    <p class="price"><a class="link" style="color: black;" href="checkout.html">₹1200/buy now</a></p>
+</div>
+
+<div class="card" data-aos="fade-up" data-aos-delay="500">
+    <img src="../assets/images/saree54.jpg" alt="Facial">
+    <div class="side-buttons">
+        <button class="btn" onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn" onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+    </div>
+    <h3>Bandhani Saree</h3>
+    <p class="price"><a class="link" style="color: black;" href="checkout.html">₹2200/buy now</a></p>
+</div>
+
+<div class="card" data-aos="fade-up" data-aos-delay="600">
+    <img src="../assets/images/saree55.jpg" alt="Facial">
+    <div class="side-buttons">
+        <button class="btn" onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn" onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+    </div>
+    <h3>Paithani Saree</h3>
+    <p class="price"><a class="link" style="color: black;" href="checkout.html">₹6000/buy now</a></p>
+</div>
+
+<div class="card" data-aos="fade-up" data-aos-delay="700">
+    <img src="../assets/images/saree56.jpg" alt="Facial">
+    <div class="side-buttons">
+        <button class="btn" onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn" onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+    </div>
+    <h3>Jamdani Saree</h3>
+    <p class="price"><a class="link" style="color: black;" href="checkout.html">₹700/buy now</a></p>
+</div>
+
+<div class="card" data-aos="fade-up" data-aos-delay="800">
+    <img src="../assets/images/saree57.jpg" alt="Facial">
+    <div class="side-buttons">
+        <button class="btn" onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn" onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+    </div>
+    <h3>Kota Doria Saree</h3>
+    <p class="price"><a class="link" style="color: black;" href="checkout.html">₹1800/buy now</a></p>
+</div>
+
+
+
+<div class="banner-section" ></div>
+<div class="card" data-aos="fade-right" data-aos-delay="100">
+    <img src="../assets/images/saree58.jpg" alt="Facial">
+    <div class="side-buttons">
+        <button class="btn" onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn" onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+    </div>
+    <h3>Pochampally Saree</h3>
+    <p class="price"><a class="link" style="color: black;" href="checkout.html">₹15000/buy now</a></p>
+</div>
+
+<div class="card" data-aos="fade-left" data-aos-delay="200">
+    <img src="../assets/images/saree59.jpg" alt="Facial">
+    <div class="side-buttons">
+        <button class="btn" onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn" onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+    </div>
+    <h3>Chikankari Saree</h3>
+    <p class="price"><a class="link" style="color: black;" href="checkout.html">₹10000/buy now</a></p>
+</div>
+
+<div class="card" data-aos="zoom-in" data-aos-delay="300">
+    <img src="../assets/images/saree60.jpg" alt="Facial">
+    <div class="side-buttons">
+        <button class="btn" onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn" onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+    </div>
+    <h3>Maheshwari Saree</h3>
+    <p class="price"><a class="link" style="color: black;" href="checkout.html">₹20000/buy now</a></p>
+</div>
+
+<div class="card" data-aos="flip-left" data-aos-delay="400">
+    <img src="../assets/images/saree61.jpg" alt="Facial">
+    <div class="side-buttons">
+        <button class="btn" onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn" onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+    </div>
+    <h3>Sambalpuri Saree</h3>
+    <p class="price"><a class="link" style="color: black;" href="checkout.html">₹30000/buy now</a></p>
+</div>
+
+<div class="card" data-aos="flip-right" data-aos-delay="500">
+    <img src="../assets/images/saree62.jpg" alt="Facial">
+    <div class="side-buttons">
+        <button class="btn" onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn" onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+    </div>
+    <h3>Assam Silk Saree</h3>
+    <p class="price"><a class="link" style="color: black;" href="checkout.html">₹3000/buy now</a></p>
+</div>
+
+<div class="card" data-aos="zoom-in-up" data-aos-delay="600">
+    <img src="../assets/images/saree63.jpg" alt="Facial">
+    <div class="side-buttons">
+        <button class="btn" onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn" onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+    </div>
+    <h3>Baluchari Saree</h3>
+    <p class="price"><a class="link" style="color: black;" href="checkout.html">₹4000/buy now</a></p>
+</div>
+
+<div class="card" data-aos="zoom-in-down" data-aos-delay="700">
+    <img src="../assets/images/saree64.jpg" alt="Facial">
+    <div class="side-buttons">
+        <button class="btn" onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn" onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+    </div>
+    <h3>Muga Silk Saree</h3>
+    <p class="price"><a class="link" style="color: black;" href="checkout.html">₹4500/buy now</a></p>
+</div>
+
+<div class="card" data-aos="fade-up" data-aos-delay="800">
+    <img src="../assets/images/saree66.jpg" alt="Facial">
+    <div class="side-buttons">
+        <button class="btn" onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn" onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+    </div>
+    <h3>Narayanpet Saree</h3>
+    <p class="price"><a class="link" style="color: black;" href="checkout.html">₹5000/buy now</a></p>
+</div>
+
+
+
+            <div class="banner-section" style="background: url('../assets/images/saree\ banner8.jpg') center/cover no-repeat;">
+                <h2></h2>
+                <p></p>
+            </div>
+           <div class="card" data-aos="fade-up" data-aos-delay="200">
+    <img src="../assets/images/saree67.jpg" alt="Facial">
+    <div class="side-buttons">
+        <button class="btn" onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn"  onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+    </div>
+    <h3> Gadwal Saree</h3>
+    <p class="price"><a class="link" style="color: black;" href="checkout.html">₹6700/buy now</a></p>
+</div>
+
+<div class="card" data-aos="zoom-in" data-aos-delay="300">
+    <img src="../assets/images/saree68.jpg" alt="Facial">
+    <div class="side-buttons">
+        <button class="btn" onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn"  onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+    </div>
+    <h3> Konrad Saree</h3>
+    <p class="price"><a class="link" style="color: black;" href="checkout.html">₹5200/buy now</a></p>
+</div>
+
+<div class="card" data-aos="flip-left" data-aos-delay="400">
+    <img src="../assets/images/saree69.jpg" alt="Facial">
+    <div class="side-buttons">
+        <button class="btn" onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn"  onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+    </div>
+    <h3> Kantha Saree</h3>
+    <p class="price"><a class="link" style="color: black;" href="checkout.html">₹3300/buy now</a></p>
+</div>
+
+<div class="card" data-aos="slide-up" data-aos-delay="500">
+    <img src="../assets/images/saree70.jpg" alt="Facial">
+    <div class="side-buttons">
+        <button class="btn" onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn"  onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+    </div>
+    <h3> Bomkai Saree</h3>
+    <p class="price"><a class="link" style="color: black;" href="checkout.html">₹2800/buy now</a></p>
+</div>
+
+<div class="card" data-aos="fade-right" data-aos-delay="600">
+    <img src="../assets/images/saree71.jpg" alt="Facial">
+    <div class="side-buttons">
+        <button class="btn" onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn"  onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+    </div>
+    <h3> Ilkal Saree</h3>
+    <p class="price"><a class="link" style="color: black;" href="checkout.html">₹9000/buy now</a></p>
+</div>
+
+<div class="card" data-aos="zoom-out" data-aos-delay="700">
+    <img src="../assets/images/saree72.jpg" alt="Facial">
+    <div class="side-buttons">
+        <button class="btn" onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn"  onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+    </div>
+    <h3> Ghicha Saree</h3>
+    <p class="price"><a class="link" style="color: black;" href="checkout.html">₹21100/buy now</a></p>
+</div>
+
+<div class="card" data-aos="flip-right" data-aos-delay="800">
+    <img src="../assets/images/saree73.jpg" alt="Facial">
+    <div class="side-buttons">
+        <button class="btn" onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn"  onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+    </div>
+    <h3>Kosa Silk Saree</h3>
+    <p class="price"><a class="link" style="color: black;" href="checkout.html">₹1999/buy now</a></p>
+</div>
+
+<div class="card" data-aos="slide-left" data-aos-delay="900">
+    <img src="../assets/images/saree74.jpg" alt="Facial">
+    <div class="side-buttons">
+        <button class="btn" onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn"  onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+    </div>
+    <h3> Tant Saree</h3>
+    <p class="price"><a class="link" style="color: black;" href="checkout.html">₹2999/buy now</a></p>
+</div>
+
+
+
+
+            <div class="banner-section" style="background: url('../assets/images/saree\ banner3.jpg') center/cover no-repeat;">
+                <h2></h2>
+                <p></p>
+            </div>
+            <div class="card" data-aos="fade-up">
+    <img src="../assets/images/saree75.jpg" alt="Facial">
+    <div class="side-buttons">
+        <button class="btn" onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn" onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+    </div>
+    <h3>Garad Saree</h3>
+    <p class="price"><a class="link" style="color: black;" href="checkout.html">₹3999/buy now</a></p>
+</div>
+
+<div class="card" data-aos="zoom-in">
+    <img src="../assets/images/saree76.jpg" alt="Facial">
+    <div class="side-buttons">
+        <button class="btn" onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn" onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+    </div>
+    <h3>Dhakai Jamdani Saree</h3>
+    <p class="price"><a class="link" style="color: black;" href="checkout.html">₹4999/buy now</a></p>
+</div>
+
+<div class="card" data-aos="flip-left">
+    <img src="../assets/images/saree77.jpg" alt="Facial">
+    <div class="side-buttons">
+        <button class="btn" onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn" onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+    </div>
+    <h3>Patan Patola Saree</h3>
+    <p class="price"><a class="link" style="color: black;" href="checkout.html">₹5999/buy now</a></p>
+</div>
+
+<div class="card" data-aos="fade-right">
+    <img src="../assets/images/saree79.jpg" alt="Facial">
+    <div class="side-buttons">
+        <button class="btn" onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn" onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+    </div>
+    <h3>Leheriya Saree</h3>
+    <p class="price"><a class="link" style="color: black;" href="checkout.html">₹6999/buy now</a></p>
+</div>
+
+<div class="card" data-aos="zoom-out">
+    <img src="../assets/images/saree80.jpg" alt="Facial">
+    <div class="side-buttons">
+        <button class="btn" onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn" onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+    </div>
+    <h3>Kotpad Saree</h3>
+    <p class="price"><a class="link" style="color: black;" href="checkout.html">₹799/buy now</a></p>
+</div>
+
+<div class="card" data-aos="fade-left">
+    <img src="../assets/images/saree81.jpg" alt="Facial">
+    <div class="side-buttons">
+        <button class="btn" onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn" onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+    </div>
+    <h3>Bishnupuri Silk Saree</h3>
+    <p class="price"><a class="link" style="color: black;" href="checkout.html">₹899/buy now</a></p>
+</div>
+
+<div class="card" data-aos="flip-up">
+    <img src="../assets/images/saree82.jpg" alt="Facial">
+    <div class="side-buttons">
+        <button class="btn" onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn" onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+    </div>
+    <h3>Phulkari Saree</h3>
+    <p class="price"><a class="link" style="color: black;" href="checkout.html">₹980/buy now</a></p>
+</div>
+
+<div class="card" data-aos="fade-down">
+    <img src="../assets/images/saree83.jpg" alt="Facial">
+    <div class="side-buttons">
+        <button class="btn" onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn" onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+    </div>
+    <h3>Kani Saree</h3>
+    <p class="price"><a class="link" style="color: black;" href="checkout.html">₹3900/buy now</a></p>
+</div>
+
+
+            <div class="banner-section" style="background: url('../assets/images/saree\ banner2.jpg') center/cover no-repeat;">
+                <h2></h2>
+                <p></p>
+            </div>
+            <div class="card" data-aos="fade-up" data-aos-delay="100">
+    <img src="../assets/images/saree84.jpg" alt="Facial">
+    <div class="side-buttons">
+        <button class="btn" onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn" onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+    </div>
+    <h3>Kasavu Saree</h3>
+    <p class="price"><a class="link" style="color: black;" href="checkout.html">₹1230/buy now</a></p>
+</div>
+
+<div class="card" data-aos="zoom-in" data-aos-delay="200">
+    <img src="../assets/images/saree85.jpg" alt="Facial">
+    <div class="side-buttons">
+        <button class="btn" onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn" onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+    </div>
+    <h3>Kota Silk Saree</h3>
+    <p class="price"><a class="link" style="color: black;" href="checkout.html">₹8900/buy now</a></p>
+</div>
+
+<div class="card" data-aos="flip-left" data-aos-delay="300">
+    <img src="../assets/images/saree53.jpg" alt="Facial">
+    <div class="side-buttons">
+        <button class="btn" onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn" onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+    </div>
+    <h3>Chanderi Silk Saree</h3>
+    <p class="price"><a class="link" style="color: black;" href="checkout.html">₹5900/buy now</a></p>
+</div>
+
+<div class="card" data-aos="fade-right" data-aos-delay="400">
+    <img src="../assets/images/saree87.jpg" alt="Facial">
+    <div class="side-buttons">
+        <button class="btn" onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn" onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+    </div>
+    <h3>Mysore Silk Saree</h3>
+    <p class="price"><a class="link" style="color: black;" href="checkout.html">₹2400/buy now</a></p>
+</div>
+
+<div class="card" data-aos="zoom-out" data-aos-delay="500">
+    <img src="../assets/images/saree88.jpg" alt="Facial">
+    <div class="side-buttons">
+        <button class="btn" onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn" onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+    </div>
+    <h3>Uppada Silk Saree</h3>
+    <p class="price"><a class="link" style="color: black;" href="checkout.html">₹3500/buy now</a></p>
+</div>
+
+<div class="card" data-aos="fade-left" data-aos-delay="600">
+    <img src="../assets/images/saree89.jpg" alt="Facial">
+    <div class="side-buttons">
+        <button class="btn" onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn" onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+    </div>
+    <h3>Mangalagiri Saree</h3>
+    <p class="price"><a class="link" style="color: black;" href="checkout.html">₹8900/buy now</a></p>
+</div>
+
+<div class="card" data-aos="flip-up" data-aos-delay="700">
+    <img src="../assets/images/saree90.jpg" alt="Facial">
+    <div class="side-buttons">
+        <button class="btn" onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn" onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+    </div>
+    <h3>Gota Patti Saree</h3>
+    <p class="price"><a class="link" style="color: black;" href="checkout.html">₹6200/buy now</a></p>
+</div>
+
+<div class="card" data-aos="fade-down" data-aos-delay="800">
+    <img src="../assets/images/saree91.jpg" alt="Facial">
+    <div class="side-buttons">
+        <button class="btn" onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn" onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+    </div>
+    <h3>Pattachitra Saree</h3>
+    <p class="price"><a class="link" style="color: black;" href="checkout.html">₹2300/buy now</a></p>
+</div>
+
+
+
+
+<div class="banner-section" style="background: url('../assets/images/saree\ banner5.jpg') center/cover no-repeat;">
+               
+</div>
+ <div class="card" data-aos="fade-up" data-aos-duration="1000">
+    <img src="../assets/images/saree92.jpg" alt="Facial">
+    <div class="side-buttons">
+        <button class="btn" onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn" onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+    </div>
+    <h3>Sanganeri Saree</h3>
+    <p class="price"><a class="link" style="color: black;" href="checkout.html">₹90000/buy now</a></p>
+</div>
+
+<div class="card" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="200">
+    <img src="../assets/images/saree93.jpg" alt="Facial">
+    <div class="side-buttons">
+        <button class="btn" onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn" onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+    </div>
+    <h3>Kota Jali Saree</h3>
+    <p class="price"><a class="link" style="color: black;" href="checkout.html">₹100000/buy now</a></p>
+</div>
+
+<div class="card" data-aos="fade-right" data-aos-duration="1300" data-aos-delay="400">
+    <img src="../assets/images/saree94.jpg" alt="Facial">
+    <div class="side-buttons">
+        <button class="btn"  onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn"  onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+    </div>
+    <h3>Muga Paat Saree</h3>
+    <p class="price"><a class="link" style="color: black;" href="checkout.html">₹80000/buy now</a></p>
+</div>
+
+<div class="card" data-aos="fade-left" data-aos-duration="1400" data-aos-delay="600">
+    <img src="../assets/images/saree95.jpg" alt="Facial">
+    <div class="side-buttons">
+        <button class="btn"  onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn"  onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+    </div>
+    <h3>Sonepuri Silk Saree</h3>
+    <p class="price"><a class="link" style="color: black;" href="checkout.html">₹30000/buy now</a></p>
+</div>
+
+<div class="card" data-aos="flip-left" data-aos-duration="1500" data-aos-delay="800">
+    <img src="../assets/images/saree69.jpg" alt="Facial">
+    <div class="side-buttons">
+        <button class="btn"  onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn"  onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+    </div>
+    <h3>Puttapaka Saree</h3>
+    <p class="price"><a class="link" style="color: black;" href="checkout.html">₹60000/buy now</a></p>
+</div>
+
+<div class="card" data-aos="flip-right" data-aos-duration="1600" data-aos-delay="1000">
+    <img src="../assets/images/saree96.jpg" alt="Facial">
+    <div class="side-buttons">
+        <button class="btn"  onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn"  onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+    </div>
+    <h3>South Indian Sarees</h3>
+    <p class="price"><a class="link" style="color: black;" href="checkout.html">₹340000/buy now</a></p>
+</div>
+
+<div class="card" data-aos="fade-up-right" data-aos-duration="1700" data-aos-delay="1200">
+    <img src="../assets/images/saree97.jpg" alt="Facial">
+    <div class="side-buttons">
+        <button class="btn"  onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn"  onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+    </div>
+    <h3>North Indian Sarees</h3>
+    <p class="price"><a class="link" style="color: black;" href="checkout.html">₹98000/buy now</a></p>
+</div>
+
+<div class="card" data-aos="fade-up-left" data-aos-duration="1800" data-aos-delay="1400">
+    <img src="../assets/images/saree98.jpg" alt="Facial">
+    <div class="side-buttons">
+        <button class="btn"  onclick="window.location.href='cart.html'"><i class="fas fa-shopping-bag"></i></button>
+        <button class="btn"  onclick="window.location.href='wishlist.html'"><i class="fas fa-star"></i></button>
+        <button class="btn"><i class="fas fa-sync-alt"></i></button>
+    </div>
+    <h3>Ikkat Saree</h3>
+    <p class="price"><a class="link" style="color: black;" href="checkout.html">₹90000/buy now</a></p>
+</div>
+ </section>
+
+
+ <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container modern-footer">
+      <div class="footer-right modern-footer-right">
+        <div class="footer-signup">
+          <span class="footer-label signup-label">SIGN UP AND SAVE</span>
+          <p class="footer-desc"><i>Subscribe to get special offers etc</i></p>
+          <form class="footer-email-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit" class="footer-email-btn"><i class="fa fa-envelope"></i></button>
+          </form>
+        </div>
+        <div class="footer-social modern-footer-social">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 TM sarees | All Rights Reserved</p>
+    </div>
+  </footer>
+<script>
+  // Footer email form alert
+  document.addEventListener('DOMContentLoaded', function() {
+    var footerForm = document.querySelector('.footer-email-form');
+    if (footerForm) {
+      footerForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Thank you for subscribing! You will receive our special offers soon.');
+      });
+    }
+    // Contact form alert
+    var contactForm = document.querySelector('.contact-form form');
+    if (contactForm) {
+      contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Thank you for contacting us! We have received your message and will get back to you soon.');
+      });
+    }
+  });
+</script>
+
+    
+
+    <script>
+        // Add background on scroll
+        window.addEventListener("scroll", function () {
+            const navbar = document.querySelector(".custom-navbar");
+            navbar.classList.toggle("scrolled", window.scrollY > 50);
+        });
+    </script>
+
+    <script>
+        function toggleFilter() {
+            document.getElementById("filterSidebar").classList.toggle("active");
+            document.querySelector(".overlay").classList.toggle("active");
+        }
+    </script>
+
+    <script>
+        document.querySelectorAll(".product-card").forEach(card => {
+            card.addEventListener("click", function () {
+                // toggle button visibility
+                const buttons = this.querySelector(".side-buttons");
+                buttons.style.opacity =
+                    (buttons.style.opacity === "1") ? "0" : "1";
+            });
+        });
+    </script>
+    <!-- AOS Script -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,   // animation speed
+    once: true        // animation happens only once
+  });
+</script>
+
+<!-- Bootstrap JS Bundle (with Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/collection.js"></script>
+
+</body>
+
+</html>
+

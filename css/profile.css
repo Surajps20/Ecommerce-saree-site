@@ -1,0 +1,218 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f5f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-wrapper {
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.left-panel {
+    flex: 1;
+    background-image: url(../assets/images/login.png.jpeg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    color: white;
+    padding: 40px;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+}
+
+.left-panel h1 {
+    font-size: 2rem;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.right-panel {
+    flex: 1;
+    background-color: papayawhip;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    overflow-y: auto;         /* ✅ Enables vertical scroll */
+    max-height: 500px;        /* ✅ Matches the container height */
+    padding: 20px;            /* Optional: adds breathing space */
+}
+
+.shop-name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #222;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.divider{
+    border: none;
+    border-top: 1px solid #ccc;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.account-detail{
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #222;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.update-account{
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #222;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #333;
+    margin-left: 10px;
+}
+
+.input-group input {
+    font-family: 'Poppins', sans-serif;
+    padding: 5px;
+    width: 50%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+.date-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.date-group label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.date-group input[type="date"] {
+  padding: 5px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  color: #555;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: #333;
+}
+
+select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #555;
+  width: 50%;
+  margin-left: 10px;
+}
+.checkbox-container {
+  margin-top: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+.custom-checkbox {
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.custom-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.checkmark {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #007bff;
+  border-radius: 4px;
+  margin-right: 10px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark::after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 0px;
+  width: 6px;
+  height: 12px;
+  border: solid #007bff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.checkbox-text {
+  line-height: 1.4;
+}
+
+.update-btn {
+    display: block;
+    width: 80%;
+    padding: 12px;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+.update-btn:hover {
+    background-color: #444;
+}

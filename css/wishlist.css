@@ -1,0 +1,569 @@
+/* ------------------- Base Styles ------------------- */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f3f3;
+    color: #333;
+    background-image: 
+        radial-gradient(circle at 5% 10%, rgba(255, 225, 225, 0.4) 0%, transparent 20%),
+        radial-gradient(circle at 95% 10%, rgba(225, 225, 255, 0.4) 0%, transparent 20%),
+        radial-gradient(circle at 50% 90%, rgba(255, 240, 220, 0.4) 0%, transparent 20%);
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+/* ------------------- Navbar ------------------- */
+.custom-navbar {
+    background: rgba(243, 147, 200, 0.5);
+    padding: 15px 0;
+    transition: background 0.4s ease, padding 0.4s ease;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.custom-navbar.scrolled {
+    background: rgba(243, 147, 200, 0.5);
+    padding: 8px 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.navbar-brand {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    color: #fcf9fc !important;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #f506d5;
+}
+
+.nav-link {
+    font-family: 'Poppins', sans-serif;
+    color: #080808 !important;
+    font-weight: 500;
+    margin: 0 10px;
+    position: relative;
+    transition: color 0.3s ease;
+    font-size: xx-small;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #ff00d4;
+    left: 0;
+    bottom: -4px;
+    transition: width 0.4s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link:hover {
+    color: #f506d5 !important;
+}
+
+/* ------------------- Banner ------------------- */
+.royal-banner {
+    margin-top: 60px;
+    height: 500px;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+                url("../assets/images/wishbg2.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-content {
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
+.banner-title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.banner-subtitle {
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* ------------------- Wishlist Container ------------------- */
+.container {
+    position: relative;
+    padding: 30px 0 50px;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 15px;
+    right: 15px;
+    bottom: 0;
+    background: linear-gradient(rgba(255,245,245,0.9), rgba(255,245,245,0.9)),
+                url("data:image/svg+xml,...") center/auto repeat;
+    z-index: -1;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.05);
+}
+
+/* ------------------- Empty Wishlist ------------------- */
+.empty-wishlist {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border: 1px solid #e5e5e5;
+    position: relative;
+    z-index: 1;
+}
+
+.empty-wishlist i {
+    font-size: 5rem;
+    color: #d1ecf1;
+    margin-bottom: 20px;
+}
+
+.empty-wishlist h3 {
+    color: #8a0c36;
+    margin-bottom: 15px;
+}
+
+.btn-browse {
+    background-color: #8a0c36;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+    transition: all 0.3s;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-browse:hover {
+    background-color: #6a0929;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(138,12,54,0.3);
+}
+
+/* ------------------- Wishlist Item ------------------- */
+.wishlist-item {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s;
+    margin-bottom: 25px;
+    position: relative;
+    border: 1px solid #f0f0f0;
+    z-index: 1;
+}
+
+.wishlist-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.wishlist-img {
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+}
+
+.wishlist-img::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40%;
+    background: linear-gradient(to top, rgba(0,0,0,0.4), transparent);
+}
+
+.wishlist-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.wishlist-item:hover .wishlist-img img {
+    transform: scale(1.05);
+}
+
+.wishlist-details {
+    padding: 20px;
+}
+
+.wishlist-details h3 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 10px;
+    height: 60px;
+    overflow: hidden;
+}
+
+.wishlist-price {
+    color: #8a0c36;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.remove-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: all 0.3s;
+    z-index: 10;
+    color: #888;
+}
+
+.remove-btn:hover {
+    background: #f8d7da;
+    transform: scale(1.1);
+    color: #d32f2f;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.btn-cart, .btn-remove {
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.btn-cart {
+    background: #f8d7da;
+    color: #8a0c36;
+    width: 48%;
+}
+
+.btn-cart:hover {
+    background: #f1b6bc;
+}
+
+.btn-remove {
+    background: #dc3545;
+    color: white;
+    width: 48%;
+}
+
+.btn-remove:hover {
+    background: #bb2d3b;
+}
+
+.wishlist-count {
+    background-color: #8a0c36;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    margin-left: 5px;
+}
+
+/* ------------------- Toast Notification ------------------- */
+.toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #8a0c36;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    z-index: 1000;
+    display: none;
+    animation: toastIn 0.3s ease, toastOut 0.3s ease 2.7s;
+}
+
+@keyframes toastIn {
+    from { transform: translateX(100px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes toastOut {
+    from { transform: translateX(0); opacity: 1; }
+    to { transform: translateX(100px); opacity: 0; }
+}
+
+
+/* Footer */
+
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+  flex: 1 1 250px;
+  margin: 10px;
+}
+
+.footer input[type="text"],
+.footer input[type="email"] {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.subscribe-form button {
+  background: #bc558e;
+  border: none;
+  color: white;
+  padding: 10px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.subscribe-form button:hover {
+  background: #bc558e;
+}
+
+/* Social Icons */
+.social-icons a {
+  color: #333;
+  font-size: 20px;
+  margin-right: 12px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #bc558e;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #181717;
+  margin-top: 20px;
+  border-top: 1px solid #eee;
+  padding: 18px 0 18px 0;
+  background: linear-gradient(90deg, #fac4e2 0%, #fdc1e1 100%);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  border-radius: 0 0 12px 12px;
+}
+/* Collection Header - Modern, Attractive Style */
+
+/* Modern Footer Styles (screenshot style) */
+.modern-footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  background: #fdfcf8;
+  padding: 40px 0 20px 0;
+  border-top: 1px solid #eee;
+  margin-top: 40px;
+}
+.modern-footer-left {
+  flex: 1 1 200px;
+  text-align: left;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 18px;
+  color: #222;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+.footer-label {
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #222;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+.modern-footer-right {
+  flex: 2 1 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+/* Center the signup form in the footer */
+.footer-signup {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signup-label {
+  font-size: 18px;
+  letter-spacing: 0.18em;
+  color: #222;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-weight: 500;
+  margin-bottom: 8px;
+  display: block;
+}
+.footer-desc {
+  font-size: 16px;
+  color: #222;
+  margin-bottom: 12px;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+.footer-email-form {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #222;
+  padding-bottom: 4px;
+  margin-bottom: 18px;
+  width: 100%;
+  max-width: 350px;
+}
+.footer-email-form input[type="email"] {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 17px;
+  color: #222;
+  flex: 1;
+  padding: 8px 0 8px 0;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+.footer-email-form input[type="email"]::placeholder {
+  color: #888;
+  font-size: 16px;
+}
+.footer-email-btn {
+  background: none;
+  border: none;
+  color: #222;
+  font-size: 22px;
+  cursor: pointer;
+  margin-left: 8px;
+  padding: 0;
+  transition: color 0.2s;
+}
+.footer-email-btn:hover {
+  color: #bc558e;
+}
+.modern-footer-social {
+  display: flex;
+  gap: 18px;
+  margin-top: 10px;
+}
+.modern-footer-social a {
+  color: #222;
+  font-size: 28px;
+  transition: color 0.2s;
+}
+.modern-footer-social a:hover {
+  color: #bc558e;
+}
+@media (max-width: 900px) {
+  .modern-footer {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 24px;
+    padding: 30px 0 10px 0;
+  }
+  .modern-footer-left, .modern-footer-right {
+    padding-left: 0;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-signup {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/*------------ Responsive ------------------- */
+
+@media (max-width: 1024px) {
+    .banner-title { font-size: 3rem; }
+    .banner-subtitle { font-size: 1rem; }
+    .wishlist-img { height: 280px; }
+    .wishlist-details h3 { font-size: 1.1rem; }
+    .navbar-brand { font-size: 1.1rem; }
+    .nav-link { font-size: small; }
+}
+
+@media (max-width: 768px) {
+    .royal-banner { height: 250px; margin-top: 70px; }
+    .banner-title { font-size: 2.2rem; }
+    .banner-subtitle { font-size: 0.9rem; }
+    .wishlist-img { height: 600px; }
+    .wishlist-details h3 { font-size: 1rem; height: auto; }
+    .action-buttons { flex-direction: column; gap: 10px; }
+    .btn-cart, .btn-remove { width: 100%; }
+    .remove-btn { width: 30px; height: 30px; font-size: 14px; }
+    .container::before { left: 8px; right: 8px; border-radius: 8px; }
+    .nav-link { font-size: x-small; margin: 0 5px; }
+}
+
+@media (max-width: 480px) {
+    .royal-banner { height: 200px; margin-top: 65px; }
+    .banner-title { font-size: 1.8rem; }
+    .banner-subtitle { font-size: 0.75rem; letter-spacing: 1px; }
+    .wishlist-img { height: 560px; }
+    .wishlist-details { padding: 15px; }
+    .wishlist-details h3 { font-size: 0.95rem; }
+    .wishlist-price { font-size: 1rem; }
+    .navbar-brand { font-size: 1rem; }
+    .nav-link { font-size: xx-small; }
+    .btn-browse { font-size: 0.9rem; padding: 10px 20px; }
+}

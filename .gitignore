@@ -1,0 +1,43 @@
+# Ignore documentation files (keep private)
+ECOMMERCE-FLOW.md
+WISHLIST-CART-GUIDE.md
+FLOW-DIAGRAM.md
+QUICK-START.md
+IMAGE-PATH-FIX.md
+PATH-UPDATE-SUMMARY.md
+
+# Ignore demo/test files
+js/demo-data.js
+
+# Ignore IDE/Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Ignore temporary files
+*.tmp
+*.temp
+*.log
+
+# Ignore backup files
+*.bak
+*.backup
+*~
+
+# Ignore node_modules if you add npm later
+node_modules/
+package-lock.json
+
+# Ignore environment files (if you add backend later)
+.env
+.env.local
+.env.production
+
+# Keep only essential files for public repo

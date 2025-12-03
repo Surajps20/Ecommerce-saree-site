@@ -1,0 +1,460 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f9f6f2;
+}
+
+.checkout-wrapper {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Left Panel */
+.left-panel {
+  flex: 2;
+  padding: 20px;
+  overflow-y: auto;   /* makes it scrollable */
+  max-height: 100vh;  /* panel can scroll within viewport */
+}
+
+.left-panel input,
+.left-panel select {
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.save-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  color: #444;
+  margin-top: 15px;
+}
+
+.save-info input[type="checkbox"] {
+  accent-color: #b22222; /* Rajasthani red */
+  width: 18px;
+  height: 18px;
+}
+
+.shipping {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  background: #fafafa;
+}
+
+/* .apply{
+  border: #333 solid 2px;
+  border-radius: 3px;
+  width: 300px;
+  margin: 5px;
+  padding: 5px;
+  background-color: green;
+  color: black;
+  justify-content: center;
+  text-align: center;
+} */
+
+.payment-logos {
+  margin-top: 30px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #555;
+}
+
+.payment-logos .pay-logo {
+  height: 30px;
+  margin: 0 8px;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+
+.payment-logos .pay-logo:hover {
+  transform: scale(1.1);
+}
+
+
+/* Right Panel (fixed summary) */
+.right-panel {
+  flex: 1;
+  padding: 20px;
+  position: sticky;   /* keeps it fixed when scrolling */
+  top: 20px;
+  height: fit-content;
+}
+
+.summary-box {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  background: #fff;
+}
+
+/* Same right panel styling as before */
+.item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.item-img {
+  position: relative;
+  margin-right: 15px;
+}
+
+.item-img img {
+  width: 60px;
+  height: 80px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.badge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background: #333;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-title { font-size: 15px; font-weight: 500; }
+.item-price { font-weight: bold; }
+
+.discount-box {
+  display: flex;
+  margin: 15px 0;
+}
+.discount-box input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
+.discount-box button {
+  border: none;
+  padding: 8px 15px;
+  background: #eee;
+  border-radius: 0 4px 4px 0;
+}
+
+.summary div {
+  display: flex;
+  justify-content: space-between;
+  margin: 6px 0;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.tax-note {
+  font-size: 12px;
+  color: gray;
+  margin-top: 5px;
+}
+
+/* Collection Header - Modern, Attractive Style */
+
+
+.custom-navbar {
+  background: rgba(243, 147, 200, 0.5);
+  padding: 15px 0;
+  transition: background 0.4s ease, padding 0.4s ease;
+}
+
+.custom-navbar.scrolled {
+  background: rgba(243, 147, 200, 0.5);
+  padding: 8px 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Brand style */
+.navbar-brand {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  color:  #ff00d4 !important;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+/* Nav links */
+.nav-link {
+  font-family: 'Poppins', sans-serif;
+  color: #080808 !important;
+  font-weight: 500;
+  margin: 0 10px;
+  position: relative;
+  transition: color 0.3s ease;
+  font-size:1rem;
+}
+
+/* Gold underline effect */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #ff00d4;
+  left: 0;
+  bottom: -4px;
+  transition: width 0.4s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link:hover {
+  color: #f506d5 !important;
+}
+
+.navbar-brand:hover{
+  color: #f506d5;
+}
+header {
+  position: fixed; /* if you want sticky header */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+
+/* Footer */
+
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+  flex: 1 1 250px;
+  margin: 10px;
+}
+
+.footer input[type="text"],
+.footer input[type="email"] {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.subscribe-form button {
+  background: #bc558e;
+  border: none;
+  color: white;
+  padding: 10px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.subscribe-form button:hover {
+  background: #bc558e;
+}
+
+/* Social Icons */
+.social-icons a {
+  color: #333;
+  font-size: 20px;
+  margin-right: 12px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #bc558e;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #050505;
+  margin-top: 20px;
+  border-top: 1px solid #eee;
+  padding: 18px 0 18px 0;
+  background: linear-gradient(90deg,  #fac4e2 0%, #fdc1e1 100%);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  border-radius: 0 0 12px 12px;
+}
+/* Collection Header - Modern, Attractive Style */
+
+/* Modern Footer Styles (screenshot style) */
+.modern-footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  background: #fdfcf8;
+  padding: 40px 0 20px 0;
+  border-top: 1px solid #eee;
+  margin-top: 40px;
+}
+.modern-footer-left {
+  flex: 1 1 200px;
+  text-align: left;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 18px;
+  color: #222;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+.footer-label {
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #222;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+.modern-footer-right {
+  flex: 2 1 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+/* Center the signup form in the footer */
+.footer-signup {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signup-label {
+  font-size: 18px;
+  letter-spacing: 0.18em;
+  color: #222;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-weight: 500;
+  margin-bottom: 8px;
+  display: block;
+}
+.footer-desc {
+  font-size: 16px;
+  color: #222;
+  margin-bottom: 12px;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+.footer-email-form {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #222;
+  padding-bottom: 4px;
+  margin-bottom: 18px;
+  width: 100%;
+  max-width: 350px;
+}
+.footer-email-form input[type="email"] {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 17px;
+  color: #222;
+  flex: 1;
+  padding: 8px 0 8px 0;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+.footer-email-form input[type="email"]::placeholder {
+  color: #888;
+  font-size: 16px;
+}
+.footer-email-btn {
+  background: none;
+  border: none;
+  color: #222;
+  font-size: 22px;
+  cursor: pointer;
+  margin-left: 8px;
+  padding: 0;
+  transition: color 0.2s;
+}
+.footer-email-btn:hover {
+  color: #bc558e;
+}
+.modern-footer-social {
+  display: flex;
+  gap: 18px;
+  margin-top: 10px;
+}
+.modern-footer-social a {
+  color: #222;
+  font-size: 28px;
+  transition: color 0.2s;
+}
+.modern-footer-social a:hover {
+  color: #bc558e;
+}
+@media (max-width: 900px) {
+  .modern-footer {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 24px;
+    padding: 30px 0 10px 0;
+  }
+  .modern-footer-left, .modern-footer-right {
+    padding-left: 0;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-signup {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+  .checkout-wrapper {
+    flex-direction: column;   /* stack panels */
+  }
+
+  .left-panel,
+  .right-panel {
+    max-height: unset;        /* allow natural height */
+    overflow: visible;
+    width: 100%;
+  }
+
+  .right-panel {
+    margin-top: 20px;
+    position: relative;       /* disable sticky on mobile */
+    top: auto;
+  }
+}

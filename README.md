@@ -159,7 +159,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Suraj P S**
 - GitHub: [@Surajps20](https://github.com/Surajps20)
 - LinkedIn: [Suraj P S](https://linkedin.com/in/suraj-p-s-817410226)
-- Email: ssuraj6255@gmail.com
+- Email: saravanansuraj65@gmail.com
 
 ## 🙏 Acknowledgments
 
